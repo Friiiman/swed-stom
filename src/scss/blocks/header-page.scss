@@ -1,0 +1,10 @@
+.header-page {
+  padding: 10px 60px;
+  background-color: $header-page-color;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

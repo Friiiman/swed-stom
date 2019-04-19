@@ -1,0 +1,31 @@
+.main-nav {
+  width: 65%;
+  text-align: right;
+
+  &__item {
+    display: inline-flex;
+  }
+
+  &__link {
+    position: relative;
+    margin-left: 20px;
+    color: $gray;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $main-color;
+    }
+
+    &--active {
+      color: $main-color;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        width: 100%;
+        border-bottom: 1px solid $main-color;
+      }
+    }
+  }
+}

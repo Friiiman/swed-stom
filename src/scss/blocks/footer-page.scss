@@ -1,0 +1,22 @@
+.footer-page {
+  padding: 20px 60px;
+  background-color: $footer-page-color;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social {
+
+    &-item {
+      display: inline-flex;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
