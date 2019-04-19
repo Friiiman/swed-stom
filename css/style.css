@@ -95,7 +95,8 @@
   src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v12-latin_cyrillic-ext-700.woff2") format("woff2"), url("../fonts/montserrat-v12-latin_cyrillic-ext-700.woff") format("woff"); }
 
 * {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif; }
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  color: #2d2d2d; }
 
 body {
   margin: 0; }
@@ -131,6 +132,8 @@ dl {
   padding: 0 60px; }
   .main-page__title {
     display: none; }
+  .main-page h2 {
+    color: #449bda; }
 
 .footer-page {
   padding: 20px 60px;
