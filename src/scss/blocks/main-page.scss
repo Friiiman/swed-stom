@@ -4,4 +4,8 @@
   &__title {
     display: none;
   }
+
+  & h2 {
+    color: $main-color;
+  }
 }
