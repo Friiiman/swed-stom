@@ -1,0 +1,14 @@
+.contacts {
+
+  &__title {
+    font-size: 42px;
+  }
+
+  &__tel-text {
+    transition: all 0.5s;
+  }
+
+  &__tel-text:hover {
+    color: $main-color;
+  }
+}
