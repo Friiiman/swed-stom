@@ -105,10 +105,12 @@ img {
   max-width: 100%;
   height: auto; }
 
+h1,
 h2 {
   color: #449bda; }
 
-a {
+a,
+blockquote {
   text-decoration: none; }
 
 ul,
@@ -119,6 +121,7 @@ dl {
 
 .header-page {
   padding: 10px 60px;
+  margin-bottom: 100px;
   background-color: #24292e; }
   .header-page__inner {
     display: -webkit-box;
@@ -131,10 +134,8 @@ dl {
         -ms-flex-align: center;
             align-items: center; }
 
-.main-page {
-  padding: 0 60px; }
-  .main-page__main-title {
-    display: none; }
+.main-page__main-title {
+  display: none; }
 
 .footer-page {
   padding: 20px 60px;
@@ -194,20 +195,27 @@ dl {
         width: 100%;
         border-bottom: 1px solid #449bda; }
 
-.doctors__title {
-  font-size: 42px;
-  margin-bottom: 80px; }
+.promo {
+  padding: 0 60px; }
 
-.doctors__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 80px; }
+.about-us {
+  padding: 0 60px; }
 
-.doctors__personality {
+.services {
+  padding: 0 60px; }
+  .services__title {
+    font-size: 42px;
+    margin-bottom: 80px; }
+  .services__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+.services-card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,38 +226,106 @@ dl {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 30px; }
+  width: 21%;
+  margin: 0 20px 30px;
+  border: 2px solid #449bda;
+  border-radius: 10px;
+  overflow: hidden; }
+  .services-card:hover {
+    -webkit-box-shadow: 0 0 10px 5px #ababab;
+            box-shadow: 0 0 10px 5px #ababab; }
+  .services-card__img {
+    width: 100%;
+    border-bottom: 2px solid #449bda; }
+  .services-card__link {
+    padding: 5px 3px; }
 
-.doctors__img-wrap {
-  position: relative;
-  margin-bottom: 20px;
-  width: 170px;
-  height: 170px;
-  border: 5px solid #449bda;
-  border-radius: 100%;
-  overflow: hidden;
-  -webkit-box-shadow: 0 0 10px 5px #ababab;
-          box-shadow: 0 0 10px 5px #ababab; }
+.doctors {
+  padding: 0 60px; }
+  .doctors__title {
+    font-size: 42px;
+    margin-bottom: 80px; }
+  .doctors__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 80px; }
+  .doctors__personality {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 30px; }
+  .doctors__img-wrap {
+    position: relative;
+    margin-bottom: 20px;
+    width: 170px;
+    height: 170px;
+    border: 5px solid #449bda;
+    border-radius: 100%;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px 5px #ababab;
+            box-shadow: 0 0 10px 5px #ababab; }
+  .doctors__img {
+    position: absolute; }
+  .doctors__name {
+    font-weight: bold;
+    font-size: 20px; }
+  .doctors__text {
+    width: 77%;
+    margin-top: 20px; }
 
-.doctors__img {
-  position: absolute; }
+.reviews {
+  padding: 0 60px; }
+  .reviews__title {
+    font-size: 42px;
+    margin-bottom: 80px; }
+  .reviews__card {
+    padding: 0 15px;
+    margin-bottom: 50px;
+    border: 2px solid #449bda;
+    border-radius: 10px; }
 
-.doctors__name {
-  font-weight: bold;
-  font-size: 20px; }
-
-.doctors__text {
-  width: 77%;
-  margin-top: 20px; }
-
-.contacts__title {
-  font-size: 42px; }
-
-.contacts__tel-text {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
-
-.contacts__tel-text:hover {
-  color: #449bda; }
+.contacts {
+  padding: 0 60px; }
+  .contacts__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .contacts__title {
+    font-size: 42px;
+    margin-bottom: 50px; }
+  .contacts__card {
+    padding-bottom: 30px; }
+  .contacts__text {
+    width: 35%;
+    padding-bottom: 80px; }
+  .contacts__card-title {
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 22px; }
+  .contacts__card-tel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .contacts__card-link {
+    padding-bottom: 10px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+  .contacts__card-link:hover {
+    color: #449bda; }
 
 /*# sourceMappingURL=style.css.map */
