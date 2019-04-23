@@ -1,0 +1,15 @@
+.reviews {
+  padding: 0 60px;
+
+  &__title {
+    font-size: 42px;
+    margin-bottom: 80px;
+  }
+
+  &__card {
+    padding: 0 15px;
+    margin-bottom: 50px;
+    border: 2px solid $main-color;
+    border-radius: 10px;
+  }
+}

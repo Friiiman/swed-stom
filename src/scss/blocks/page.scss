@@ -12,11 +12,13 @@ img {
   height: auto;
 }
 
+h1,
 h2 {
   color: $main-color;
 }
 
-a {
+a,
+blockquote {
   text-decoration: none;
 }
 
