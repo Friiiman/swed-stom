@@ -14,11 +14,16 @@
   }
 
   &__img {
-    width: 100%;
+    width: 280px;
+    height: 150px;
+    transform: scale(-1, 1);
     border-bottom: 2px solid $main-color;
   }
 
   &__link {
     padding: 5px 3px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
   }
 }
