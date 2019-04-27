@@ -133,7 +133,9 @@ dl {
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin: 0 auto;
+    max-width: 1280px; }
 
 .main-page__main-title {
   display: none; }
@@ -150,7 +152,9 @@ dl {
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    max-width: 1280px;
+    margin: 0 auto; }
   .footer-page__social-item {
     position: relative;
     display: -webkit-inline-box;
@@ -202,7 +206,7 @@ dl {
   background-size: cover;
   overflow: hidden; }
   .promo__title {
-    padding-top: 20%;
+    padding-top: 250px;
     margin: 0;
     padding-bottom: 10px;
     font-size: 64px; }
@@ -212,11 +216,15 @@ dl {
 .about {
   position: relative;
   padding: 80px 60px 0;
+  margin: 0 auto;
+  max-width: 1280px;
   overflow: hidden;
   background-color: #ffffff; }
 
 .services {
-  padding: 50px 60px 80px; }
+  padding: 50px 60px 80px;
+  margin: 0 auto;
+  max-width: 1280px; }
   .services__title {
     margin-bottom: 0;
     padding-bottom: 15px;
@@ -245,7 +253,7 @@ dl {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 21.7%;
+  width: 21.5%;
   margin: 0 20px 30px;
   border: 2px solid #449bda;
   border-radius: 10px;
@@ -272,7 +280,9 @@ dl {
     transition: all .5s; }
 
 .doctors {
-  padding: 50px 60px 80px; }
+  padding: 50px 60px 80px;
+  margin: 0 auto;
+  max-width: 1280px; }
   .doctors__title {
     margin-bottom: 0;
     padding-bottom: 15px;
@@ -351,13 +361,17 @@ dl {
               box-shadow: 0 0 10px 5px #ababab; }
 
 .promotions-discounts {
-  padding: 50px 60px 80px; }
+  padding: 50px 60px 80px;
+  margin: 0 auto;
+  max-width: 1280px; }
   .promotions-discounts__title {
     font-size: 46px;
     margin-bottom: 80px; }
 
 .reviews {
-  padding: 50px 60px 80px; }
+  padding: 50px 60px 80px;
+  margin: 0 auto;
+  max-width: 1280px; }
   .reviews__title {
     margin-bottom: 0;
     padding-bottom: 15px;
@@ -383,7 +397,9 @@ dl {
           box-shadow: 0 0 10px 5px #ababab; }
 
 .contacts {
-  padding: 50px 60px 80px; }
+  padding: 50px 60px 80px;
+  margin: 0 auto;
+  max-width: 1280px; }
   .contacts__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -448,7 +464,8 @@ dl {
     color: #449bda; }
 
 .map {
-  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
   height: 300px; }
 
 /*# sourceMappingURL=style.css.map */
