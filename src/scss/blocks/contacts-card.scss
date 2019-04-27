@@ -1,0 +1,29 @@
+.contacts-card {
+  padding-bottom: 40px;
+  width: 33%;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+  &__title {
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 22px;
+  }
+
+  &__tel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    width: 150px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+  }
+
+  &__link:hover {
+    color: $main-color;
+  }
+}

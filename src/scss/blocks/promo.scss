@@ -1,12 +1,25 @@
 .promo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 60px 80px;
+  height: 700px;
+  position: relative;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1531114181037-5e61a592cf2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=23dbfaafedbf9400522ef9c47334f99a&auto=format&fit=crop&w=1350&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // padding: 0 60px 80px;
 
   &__title {
+    padding-top: 20%;
     margin: 0;
     padding-bottom: 10px;
-    font-size: 52px;
+    font-size: 64px;
+  }
+
+  &__text {
+    font-size: 30px;
   }
 }
