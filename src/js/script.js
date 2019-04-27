@@ -7,7 +7,7 @@ svg4everybody();
 $(document).ready(function($){
 
   $('.doctors-card__button').click(function(){
-    $(this).siblings('.doctors-card__text-more').toggleClass('doctors-card__text-hide');
+    $(this).siblings('.doctors-card__text-more').toggleClass('doctors-card__text--hide');
   });
 
 });

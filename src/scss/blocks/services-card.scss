@@ -8,9 +8,14 @@
   border: 2px solid $main-color;
   border-radius: 10px;
   overflow: hidden;
+  transition: all .5s;
 
   &:hover {
     box-shadow: 0 0 10px 5px $gray;
+
+    .services-card__text {
+      color: $main-color;
+    }
   }
 
   &__img {
@@ -20,10 +25,10 @@
     border-bottom: 2px solid $main-color;
   }
 
-  &__link {
-    padding: 5px 3px;
+  &__text {
+    padding: 5px 5px;
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
+    transition: all .5s;
   }
 }

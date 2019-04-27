@@ -48,17 +48,14 @@
     width: 70%;
     margin-top: 20px;
     padding-right: 30px;
-  }
 
-  &__text-hide {
-    display: none;
-  }
-
-  &__text-show {
-    display: block;
+    &--hide {
+      display: none;
+    }
   }
 
   &__button {
+    margin-top: 10px;
     padding: 5px 8px;
     font-size: 14px;
     font-weight: bold;
@@ -67,5 +64,11 @@
     border: 2px solid $main-color;
     border-radius: 8px;
     cursor: pointer;
+    transition: all .5s;
+
+    &:hover {
+      color: $main-color;
+      box-shadow: 0 0 10px 5px $gray;
+    }
   }
 }

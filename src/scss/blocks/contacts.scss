@@ -1,22 +1,30 @@
 .contacts {
-  padding: 0 60px;
+  padding: 50px 60px 80px;
 
   &__inner {
     display: flex;
-    padding-bottom: 40px;
+    flex-direction: column;
+    padding-bottom: 80px;
   }
 
   &__title {
-    font-size: 42px;
-    margin-bottom: 50px;
+    font-size: 46px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
   }
 
   &__card {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    width: 33%;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 
   &__text {
-    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__card-title {
@@ -37,5 +45,24 @@
 
   &__card-link:hover {
     color: $main-color;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  &__img-item {
+    width: 550px;
+    height: 500px;
+    margin-left: 60px;
+    border: 2px solid $main-color;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px $gray;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
   }
 }
