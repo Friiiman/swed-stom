@@ -10,19 +10,19 @@ $(document).ready(function($){
     $(this).siblings('.doctors-card__text-more').toggleClass('doctors-card__text--hide');
   });
 
+
   //***PARALLAX***
   $(window).scroll(function(){
     const st = $(this).scrollTop();
-    console.log(st);
 
     $('.promo__inner').css({
-      'transform' : 'translate(0%, -' + st /7 +'%'
+      'transform' : 'translate(0%, -' + st /14 +'%'
     });
 
     $('.about').css({
       'transform' : 'translate(0%, -' + st /7 +'%'
     });
-
   });
+
 
 });
