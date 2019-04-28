@@ -4,14 +4,15 @@
   top: 0;
   left: 0;
   right: 0;
-  text-align: center;
-  background-image: url('https://images.unsplash.com/photo-1531114181037-5e61a592cf2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=23dbfaafedbf9400522ef9c47334f99a&auto=format&fit=crop&w=1350&q=80');
+  // text-align: center;
+  background-image: url('https://www.genalyte.com/wp-content/uploads/2015/07/for-patients-1600px.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   // overflow: hidden;
   z-index: -2;
 
   &__inner {
+    margin-left: 8%;
     // height: 300%;
     // box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.4);
   }
@@ -20,10 +21,10 @@
     padding-top: 300px;
     margin: 0;
     padding-bottom: 10px;
-    font-size: 64px;
+    font-size: 56px;
   }
 
   &__text {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
