@@ -201,15 +201,17 @@ dl {
 
 .promo {
   height: 700px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   background-image: url("https://images.unsplash.com/photo-1531114181037-5e61a592cf2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=23dbfaafedbf9400522ef9c47334f99a&auto=format&fit=crop&w=1350&q=80");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
   z-index: -2; }
   .promo__title {
-    padding-top: 260px;
+    padding-top: 300px;
     margin: 0;
     padding-bottom: 10px;
     font-size: 64px; }
@@ -225,22 +227,26 @@ dl {
   z-index: -1; }
 
 .about {
-  margin: 0 auto;
-  max-width: 1280px;
-  position: relative;
-  padding: 0 60px 0;
-  overflow: hidden;
+  margin: 590px 0 0;
   background-color: #ffffff; }
+  .about__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 60px; }
   .about__title {
     margin: 0;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 15px;
     font-size: 46px; }
+  .about__text {
+    margin: 0;
+    padding-bottom: 20px; }
 
 .advantages {
   margin: 0 auto;
   padding: 60px 60px 0;
-  max-width: 1280px; }
+  max-width: 1280px;
+  background-color: #ffffff; }
   .advantages__title {
     margin: 0;
     padding-bottom: 31px;
