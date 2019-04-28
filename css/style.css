@@ -137,8 +137,10 @@ dl {
     margin: 0 auto;
     max-width: 1280px; }
 
-.main-page__main-title {
-  display: none; }
+.main-page {
+  position: relative; }
+  .main-page__main-title {
+    display: none; }
 
 .footer-page {
   padding: 20px 60px;
@@ -204,22 +206,54 @@ dl {
   background-image: url("https://images.unsplash.com/photo-1531114181037-5e61a592cf2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=23dbfaafedbf9400522ef9c47334f99a&auto=format&fit=crop&w=1350&q=80");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -2; }
   .promo__title {
-    padding-top: 250px;
+    padding-top: 260px;
     margin: 0;
     padding-bottom: 10px;
     font-size: 64px; }
   .promo__text {
     font-size: 30px; }
 
+.parallax {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  background-color: #ffffff;
+  z-index: -1; }
+
 .about {
-  position: relative;
-  padding: 80px 60px 0;
   margin: 0 auto;
   max-width: 1280px;
+  position: relative;
+  padding: 0 60px 0;
   overflow: hidden;
   background-color: #ffffff; }
+  .about__title {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 46px; }
+
+.advantages {
+  margin: 0 auto;
+  padding: 60px 60px 0;
+  max-width: 1280px; }
+  .advantages__title {
+    margin: 0;
+    padding-bottom: 31px;
+    font-size: 46px; }
+  .advantages__item {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 22px; }
+    .advantages__item p {
+      font-weight: normal;
+      font-style: italic;
+      font-size: 16px; }
 
 .services {
   padding: 50px 60px 80px;
