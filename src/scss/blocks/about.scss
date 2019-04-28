@@ -1,15 +1,23 @@
 .about {
-  margin: 0 auto;
-  max-width: 1280px;
-  position: relative;
-  padding: 0 60px 0;
-  overflow: hidden;
+  margin: 590px 0 0;
+  // overflow: hidden;
   background-color: $white;
+
+  &__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
 
   &__title {
     margin: 0;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 15px;
     font-size: 46px;
+  }
+
+  &__text {
+    margin: 0;
+    padding-bottom: 20px;
   }
 }

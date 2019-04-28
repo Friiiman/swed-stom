@@ -16,12 +16,11 @@ $(document).ready(function($){
     const st = $(this).scrollTop();
 
     $('.promo__inner').css({
-      'transform' : 'translate(0%, -' + st /8 +'%'
+      'transform' : 'translate(0%, -' + st / 5 +'%'
     });
 
-    $('.parallax').css({
-      'transform' : 'translate(0%, -' + st /30 +'%'
-    });
+    $('.promo').css({'top': -$(window).scrollTop() / 2});
+
   });
 
 
