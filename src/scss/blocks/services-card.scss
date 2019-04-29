@@ -13,6 +13,7 @@
 
   &:hover {
     box-shadow: 0 0 10px 5px $gray;
+    transform: scale(1.1, 1.1);
 
     .services-card__text {
       color: $main-color;
