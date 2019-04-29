@@ -121,6 +121,26 @@ dl {
   padding: 0;
   margin: 0; }
 
+button {
+  margin-top: 10px;
+  padding: 5px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #24292e;
+  background-color: #ffffff;
+  border: 2px solid #449bda;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+  button:hover {
+    color: #449bda;
+    background-color: #ededed;
+    -webkit-box-shadow: 0 0 10px 5px #ababab;
+            box-shadow: 0 0 10px 5px #ababab;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1); }
+
 .header-page {
   padding: 10px 60px;
   background-color: rgba(243, 207, 207, 0.5);
@@ -410,7 +430,9 @@ dl {
   transition: all .5s; }
   .services-card:hover {
     -webkit-box-shadow: 0 0 10px 5px #ababab;
-            box-shadow: 0 0 10px 5px #ababab; }
+            box-shadow: 0 0 10px 5px #ababab;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1); }
     .services-card:hover .services-card__text {
       color: #449bda;
       background-color: #ededed; }
@@ -480,7 +502,6 @@ dl {
     margin-bottom: 20px;
     width: 250px;
     height: 350px;
-    border-radius: 7px;
     overflow: hidden;
     -webkit-box-shadow: 5px 5px 10px 3px #ababab;
             box-shadow: 5px 5px 10px 3px #ababab; }
@@ -496,23 +517,6 @@ dl {
     padding-right: 30px; }
     .doctors-card__text--hide {
       display: none; }
-  .doctors-card__button {
-    margin-top: 10px;
-    padding: 5px 8px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #24292e;
-    background-color: #ffffff;
-    border: 2px solid #449bda;
-    border-radius: 8px;
-    cursor: pointer;
-    -webkit-transition: all .5s;
-    transition: all .5s; }
-    .doctors-card__button:hover {
-      color: #449bda;
-      background-color: #ededed;
-      -webkit-box-shadow: 0 0 10px 5px #ababab;
-              box-shadow: 0 0 10px 5px #ababab; }
 
 .promotions-discounts {
   padding: 50px 60px 80px;
