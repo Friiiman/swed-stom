@@ -97,7 +97,7 @@
 * {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   line-height: 1.4;
-  color: #2d2d2d; }
+  color: #24292e; }
 
 body {
   margin: 0;
@@ -124,7 +124,8 @@ dl {
 .header-page {
   padding: 10px 60px;
   background-color: rgba(243, 207, 207, 0.5);
-  z-index: 10; }
+  z-index: 10;
+  border-bottom: 1px solid #ababab; }
   .header-page__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -145,7 +146,8 @@ dl {
 
 .footer-page {
   padding: 20px 60px;
-  background-color: #f3cfcf; }
+  background-color: #f3cfcf;
+  border-top: 1px solid #ababab; }
   .footer-page__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -223,7 +225,8 @@ dl {
 
 .about {
   margin: 590px 0 0;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  border-top: 1px solid #ababab; }
   .about__inner {
     max-width: 1280px;
     margin: 0 auto;
@@ -238,10 +241,11 @@ dl {
     padding-bottom: 20px; }
 
 .advantages {
-  margin: 0 auto;
-  padding: 60px 60px 0;
-  max-width: 1280px;
   background-color: #ffffff; }
+  .advantages__inner {
+    margin: 0 auto;
+    padding: 60px 60px 0;
+    max-width: 1280px; }
   .advantages__title {
     margin: 0;
     padding-bottom: 31px;
@@ -251,13 +255,14 @@ dl {
     list-style-type: none;
     margin-left: 150px;
     margin-bottom: 40px;
-    min-height: 100px;
+    padding-right: 110px;
+    min-height: 120px;
     font-size: 24px;
     font-weight: bold; }
     .advantages__item:before {
       content: '';
       position: absolute;
-      width: 110%;
+      width: 100%;
       left: -100px;
       top: -20px;
       border-top: 2px solid #ababab; }
@@ -272,7 +277,7 @@ dl {
     content: '';
     position: absolute;
     display: inline-block;
-    top: 10px;
+    top: 25px;
     left: -100px;
     background-image: url(../img/person.png);
     width: 70px;
@@ -284,7 +289,7 @@ dl {
     content: '';
     position: absolute;
     display: inline-block;
-    top: 10px;
+    top: 25px;
     left: -100px;
     background-image: url(../img/gear.png);
     width: 70px;
@@ -296,7 +301,7 @@ dl {
     content: '';
     position: absolute;
     display: inline-block;
-    top: 10px;
+    top: 25px;
     left: -100px;
     background-image: url(../img/doctor.png);
     width: 70px;
@@ -308,7 +313,7 @@ dl {
     content: '';
     position: absolute;
     display: inline-block;
-    top: 10px;
+    top: 25px;
     left: -100px;
     background-image: url(../img/med-bag.png);
     width: 70px;
@@ -320,7 +325,7 @@ dl {
     content: '';
     position: absolute;
     display: inline-block;
-    top: 10px;
+    top: 25px;
     left: -100px;
     background-image: url(../img/care.png);
     width: 70px;
@@ -332,7 +337,7 @@ dl {
     content: '';
     position: absolute;
     display: inline-block;
-    top: 10px;
+    top: 25px;
     left: -100px;
     background-image: url(../img/like.png);
     width: 70px;
@@ -351,7 +356,7 @@ dl {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 50px 60px 80px;
+  padding: 50px 60px 70px;
   margin: 0 auto;
   max-width: 1280px; }
   .services__title {
@@ -400,7 +405,6 @@ dl {
   width: 250px;
   margin: 0 20px 30px;
   border: 2px solid #449bda;
-  border-radius: 10px;
   overflow: hidden;
   -webkit-transition: all .5s;
   transition: all .5s; }
@@ -408,7 +412,8 @@ dl {
     -webkit-box-shadow: 0 0 10px 5px #ababab;
             box-shadow: 0 0 10px 5px #ababab; }
     .services-card:hover .services-card__text {
-      color: #449bda; }
+      color: #449bda;
+      background-color: #ededed; }
   .services-card__img {
     width: 280px;
     height: 150px;
@@ -416,15 +421,16 @@ dl {
             transform: scale(-1, 1);
     border-bottom: 2px solid #449bda; }
   .services-card__text {
+    width: 100%;
     padding: 7px 0;
     text-align: center;
-    font-size: 16px;
+    font-size: 15.5px;
     font-weight: bold;
     -webkit-transition: all .5s;
     transition: all .5s; }
 
 .doctors {
-  padding: 50px 60px 80px;
+  padding: 50px 60px 100px;
   margin: 0 auto;
   max-width: 1280px; }
   .doctors__title {
@@ -441,19 +447,23 @@ dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-bottom: 80px; }
   .doctors-card:before {
     content: '';
     position: absolute;
     width: 100%;
+    max-width: 1280px;
     top: -40px;
     border-top: 2px solid #ababab; }
   .doctors-card:first-of-type:before {
     content: '';
     border-top: none; }
+  .doctors-card:last-of-type {
+    margin-bottom: 0; }
   .doctors-card__personality {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -469,12 +479,11 @@ dl {
   .doctors-card__img-wrap {
     margin-bottom: 20px;
     width: 250px;
-    height: 320px;
-    border: 2px solid #449bda;
-    border-radius: 10px;
+    height: 350px;
+    border-radius: 7px;
     overflow: hidden;
-    -webkit-box-shadow: 0 0 10px 3px #ababab;
-            box-shadow: 0 0 10px 3px #ababab; }
+    -webkit-box-shadow: 5px 5px 10px 3px #ababab;
+            box-shadow: 5px 5px 10px 3px #ababab; }
   .doctors-card__img {
     width: 100%;
     height: auto; }
@@ -482,8 +491,8 @@ dl {
     font-weight: bold;
     font-size: 20px; }
   .doctors-card__text {
-    width: 70%;
     margin-top: 20px;
+    margin-left: 50px;
     padding-right: 30px; }
     .doctors-card__text--hide {
       display: none; }
@@ -492,7 +501,7 @@ dl {
     padding: 5px 8px;
     font-size: 14px;
     font-weight: bold;
-    color: #2d2d2d;
+    color: #24292e;
     background-color: #ffffff;
     border: 2px solid #449bda;
     border-radius: 8px;
@@ -501,6 +510,7 @@ dl {
     transition: all .5s; }
     .doctors-card__button:hover {
       color: #449bda;
+      background-color: #ededed;
       -webkit-box-shadow: 0 0 10px 5px #ababab;
               box-shadow: 0 0 10px 5px #ababab; }
 
@@ -513,7 +523,7 @@ dl {
     margin-bottom: 80px; }
 
 .reviews {
-  padding: 50px 60px 80px;
+  padding: 50px 60px 100px;
   margin: 0 auto;
   max-width: 1280px; }
   .reviews__title {
@@ -530,12 +540,12 @@ dl {
     -webkit-transition: all .5s;
     transition: all .5s; }
     .reviews__link:hover {
-      color: #2d2d2d; }
+      color: #ababab; }
 
 .reviews-card {
   position: relative;
   padding: 0 15px;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   border: 2px solid #449bda;
   border-radius: 15px; }
   .reviews-card:before {
@@ -559,9 +569,11 @@ dl {
     background-image: url(../img/chat-bubble.png);
     background-repeat: no-repeat;
     background-size: 100%; }
+  .reviews-card:last-of-type {
+    margin-bottom: 0; }
 
 .contacts {
-  padding: 50px 60px 80px;
+  padding: 50px 60px 100px;
   margin: 0 auto;
   max-width: 1280px; }
   .contacts__inner {
@@ -572,6 +584,7 @@ dl {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-left: 3px;
     padding-bottom: 80px; }
   .contacts__title {
     font-size: 46px;
@@ -604,7 +617,7 @@ dl {
     height: 400px;
     margin-left: 30px;
     border: 2px solid #449bda;
-    border-radius: 10px;
+    border-radius: 7px;
     -webkit-box-shadow: 0 0 10px 5px #ababab;
             box-shadow: 0 0 10px 5px #ababab; }
     .contacts__img-item:first-of-type {
@@ -625,6 +638,19 @@ dl {
     padding-bottom: 10px;
     margin: 0;
     font-size: 22px; }
+  .contacts-card__underground {
+    position: relative; }
+    .contacts-card__underground:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      top: 38px;
+      left: 155px;
+      background-image: url(../img/metro-line1.png);
+      background-repeat: no-repeat;
+      background-size: contain; }
   .contacts-card__tel {
     display: -webkit-box;
     display: -ms-flexbox;
