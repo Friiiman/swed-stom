@@ -123,7 +123,8 @@ dl {
 
 .header-page {
   padding: 10px 60px;
-  background-color: rgba(243, 207, 207, 0.5); }
+  background-color: rgba(243, 207, 207, 0.5);
+  z-index: 10; }
   .header-page__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -144,7 +145,7 @@ dl {
 
 .footer-page {
   padding: 20px 60px;
-  background-color: #24292e; }
+  background-color: #f3cfcf; }
   .footer-page__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -176,7 +177,7 @@ dl {
       display: none; }
 
 .main-nav {
-  width: 65%;
+  width: 70%;
   text-align: right; }
   .main-nav__item {
     display: -webkit-inline-box;
@@ -185,7 +186,7 @@ dl {
   .main-nav__link {
     position: relative;
     margin-left: 20px;
-    color: #ababab;
+    color: #828282;
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
     .main-nav__link:hover {
@@ -205,7 +206,7 @@ dl {
   top: 0;
   left: 0;
   right: 0;
-  background-image: url("https://www.genalyte.com/wp-content/uploads/2015/07/for-patients-1600px.jpg");
+  background-image: url(../img/promo-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2; }
@@ -217,6 +218,7 @@ dl {
     padding-bottom: 10px;
     font-size: 56px; }
   .promo__text {
+    margin-left: 5px;
     font-size: 24px; }
 
 .about {
@@ -249,6 +251,7 @@ dl {
     list-style-type: none;
     margin-left: 150px;
     margin-bottom: 40px;
+    min-height: 100px;
     font-size: 24px;
     font-weight: bold; }
     .advantages__item:before {
@@ -339,6 +342,15 @@ dl {
     background-size: 100%; }
 
 .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 50px 60px 80px;
   margin: 0 auto;
   max-width: 1280px; }
@@ -354,8 +366,23 @@ dl {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .services__services-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    width: 1160px; }
+    @media (max-width: 1279px) {
+      .services__services-cards {
+        width: 870px; } }
 
 .services-card {
   -webkit-box-sizing: border-box;
@@ -370,7 +397,7 @@ dl {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 21.4%;
+  width: 250px;
   margin: 0 20px 30px;
   border: 2px solid #449bda;
   border-radius: 10px;
@@ -506,12 +533,32 @@ dl {
       color: #2d2d2d; }
 
 .reviews-card {
+  position: relative;
   padding: 0 15px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   border: 2px solid #449bda;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 10px 5px #ababab;
-          box-shadow: 0 0 10px 5px #ababab; }
+  border-radius: 15px; }
+  .reviews-card:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    top: -2px;
+    left: 50%;
+    margin-left: -30px;
+    background-color: #ffffff; }
+  .reviews-card:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -24px;
+    left: 50%;
+    margin-left: -25px;
+    background-image: url(../img/chat-bubble.png);
+    background-repeat: no-repeat;
+    background-size: 100%; }
 
 .contacts {
   padding: 50px 60px 80px;
@@ -540,20 +587,34 @@ dl {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding-top: 30px; }
+    @media (max-width: 1100px) {
+      .contacts__img {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   .contacts__img-item {
-    width: 550px;
-    height: 500px;
-    margin-left: 60px;
+    width: 450px;
+    height: 400px;
+    margin-left: 30px;
     border: 2px solid #449bda;
     border-radius: 10px;
     -webkit-box-shadow: 0 0 10px 5px #ababab;
             box-shadow: 0 0 10px 5px #ababab; }
     .contacts__img-item:first-of-type {
-      margin-left: 0; }
+      margin: 0; }
+    @media (max-width: 1100px) {
+      .contacts__img-item {
+        margin-left: 0;
+        margin-top: 50px; }
+        .contacts__img-item:first-of-type {
+          margin: 0; } }
 
 .contacts-card {
   padding-bottom: 40px;
