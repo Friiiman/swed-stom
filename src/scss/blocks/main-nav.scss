@@ -1,5 +1,5 @@
 .main-nav {
-  width: 65%;
+  width: 70%;
   text-align: right;
 
   &__item {
@@ -9,7 +9,7 @@
   &__link {
     position: relative;
     margin-left: 20px;
-    color: $gray;
+    color: $gray-dark;
     transition: all 0.5s;
 
     &:hover {

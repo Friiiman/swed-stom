@@ -1,4 +1,7 @@
 .services {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   padding: 50px 60px 80px;
   margin: 0 auto;
   max-width: 1280px;
@@ -17,6 +20,18 @@
 
   &__inner {
     display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__services-cards {
+    display: flex;
     flex-wrap: wrap;
+    width: 1160px;
+
+    @media (max-width: 1279px) {
+      width: 870px;
+    }
   }
 }

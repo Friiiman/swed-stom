@@ -4,11 +4,9 @@
   top: 0;
   left: 0;
   right: 0;
-  // text-align: center;
-  background-image: url('https://www.genalyte.com/wp-content/uploads/2015/07/for-patients-1600px.jpg');
+  background-image: url(../img/promo-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  // overflow: hidden;
   z-index: -2;
 
   &__inner {
@@ -25,6 +23,7 @@
   }
 
   &__text {
+    margin-left: 5px;
     font-size: 24px;
   }
 }

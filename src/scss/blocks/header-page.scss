@@ -1,7 +1,11 @@
 .header-page {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
   padding: 10px 60px;
-  // background-color: $header-page-color;
   background-color: rgba($header-page-color, .5);
+  z-index: 10;
 
   &__inner {
     display: flex;
