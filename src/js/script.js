@@ -12,7 +12,7 @@ $(document).ready(function($){
   });
 
 
-  //***PARALLAX***
+  //*****PARALLAX*****
   $(window).scroll(function(){
     const st = $(this).scrollTop();
 

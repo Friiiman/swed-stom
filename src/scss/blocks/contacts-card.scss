@@ -13,6 +13,23 @@
     font-size: 22px;
   }
 
+  &__underground {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      top: 38px;
+      left: 155px;
+      background-image: url(../img/metro-line1.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
   &__tel {
     display: flex;
     flex-direction: column;

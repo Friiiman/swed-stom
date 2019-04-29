@@ -1,13 +1,14 @@
 .doctors-card {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   margin-bottom: 80px;
 
   &:before {
     content: '';
     position: absolute;
     width: 100%;
+    max-width: 1280px;
     top: -40px;
     border-top: 2px solid $gray;
   }
@@ -15,6 +16,10 @@
   &:first-of-type:before {
     content: '';
     border-top: none;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
 
   &__personality {
@@ -27,11 +32,11 @@
   &__img-wrap {
     margin-bottom: 20px;
     width: 250px;
-    height: 320px;
-    border: 2px solid $main-color;
-    border-radius: 10px;
+    height: 350px;
+    // border: 2px solid $main-color;
+    border-radius: 7px;
     overflow: hidden;
-    box-shadow: 0 0 10px 3px $gray;
+    box-shadow: 5px 5px 10px 3px $gray;
   }
 
   &__img {
@@ -45,8 +50,8 @@
   }
 
   &__text {
-    width: 70%;
     margin-top: 20px;
+    margin-left: 50px;
     padding-right: 30px;
 
     &--hide {
@@ -68,6 +73,7 @@
 
     &:hover {
       color: $main-color;
+      background-color: $gray-lighter;
       box-shadow: 0 0 10px 5px $gray;
     }
   }

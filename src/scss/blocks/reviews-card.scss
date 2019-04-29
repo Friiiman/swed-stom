@@ -1,7 +1,7 @@
 .reviews-card {
   position: relative;
   padding: 0 15px;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   border: 2px solid $main-color;
   border-radius: 15px;
 
@@ -16,11 +16,6 @@
     background-color: $white;
   }
 
-  // &:first-of-type:before {
-  //   content: '';
-  //   border-top: none;
-  // }
-
   &:after {
     content: '';
     display: inline-block;
@@ -33,5 +28,9 @@
     background-image: url(../img/chat-bubble.png);
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
 }

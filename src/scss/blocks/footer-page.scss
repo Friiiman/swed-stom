@@ -1,6 +1,7 @@
 .footer-page {
   padding: 20px 60px;
   background-color: $footer-page-color;
+  border-top: 1px solid $gray;
 
   &__inner {
     display: flex;
