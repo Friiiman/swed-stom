@@ -628,12 +628,15 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-left: 3px;
-    padding-bottom: 80px; }
+    padding-bottom: 100px; }
   .contacts__title {
     font-size: 46px;
     margin-bottom: 0;
@@ -643,43 +646,22 @@ button {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-  .contacts__img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding-top: 30px; }
-    @media (max-width: 1100px) {
-      .contacts__img {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; } }
-  .contacts__img-item {
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 30px;
+    width: 45%; }
+  .contacts__text-img {
     width: 450px;
     height: 400px;
-    margin-left: 30px;
-    border: 2px solid #449bda;
-    border-radius: 7px;
-    -webkit-box-shadow: 0 0 10px 5px #ababab;
-            box-shadow: 0 0 10px 5px #ababab; }
-    .contacts__img-item:first-of-type {
-      margin: 0; }
-    @media (max-width: 1100px) {
-      .contacts__img-item {
-        margin-left: 0;
-        margin-top: 50px; }
-        .contacts__img-item:first-of-type {
-          margin: 0; } }
+    -webkit-box-shadow: 0 0 10px 5px #828282;
+            box-shadow: 0 0 10px 5px #828282;
+    border: 2px solid #449bda; }
 
 .contacts-card {
   padding-bottom: 40px;
-  width: 33%; }
+  width: 40%; }
   .contacts-card:last-of-type {
     margin-right: 0; }
   .contacts-card__title {
@@ -718,6 +700,6 @@ button {
 .map {
   margin: 0 auto;
   max-width: 1280px;
-  height: 300px; }
+  height: 350px; }
 
 /*# sourceMappingURL=style.css.map */
