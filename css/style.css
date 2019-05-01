@@ -146,6 +146,9 @@ button {
   background-color: rgba(243, 207, 207, 0.5);
   z-index: 10;
   border-bottom: 1px solid #ababab; }
+  @media (max-width: 950px) {
+    .header-page {
+      padding: 10px 35px; } }
   .header-page__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -168,6 +171,9 @@ button {
   padding: 20px 60px;
   background-color: #f3cfcf;
   border-top: 1px solid #ababab; }
+  @media (max-width: 950px) {
+    .footer-page {
+      padding: 10px 35px; } }
   .footer-page__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -185,7 +191,8 @@ button {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    margin-right: 10px; }
+    margin-right: 10px;
+    height: 32px; }
     .footer-page__social-item:last-child {
       margin-right: 0; }
     .footer-page__social-item:before {
@@ -251,9 +258,12 @@ button {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 60px; }
+    @media (max-width: 950px) {
+      .about__inner {
+        padding: 0 35px; } }
   .about__title {
     margin: 0;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 15px;
     font-size: 46px; }
   .about__text {
@@ -261,11 +271,15 @@ button {
     padding-bottom: 20px; }
 
 .advantages {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding-bottom: 80px; }
   .advantages__inner {
     margin: 0 auto;
     padding: 60px 60px 0;
     max-width: 1280px; }
+    @media (max-width: 950px) {
+      .advantages__inner {
+        padding: 60px 35px 0; } }
   .advantages__title {
     margin: 0;
     padding-bottom: 31px;
@@ -289,6 +303,8 @@ button {
     .advantages__item:first-of-type:before {
       content: '';
       border-top: none; }
+    .advantages__item:last-of-type {
+      margin-bottom: 0; }
     .advantages__item p {
       font-weight: normal;
       font-style: italic;
@@ -366,6 +382,12 @@ button {
     background-position: center;
     background-size: 100%; }
 
+.slider {
+  padding: 0 60px 100px;
+  margin: 0 auto;
+  max-width: 1280px;
+  background-color: #ffffff; }
+
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,9 +398,12 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 50px 60px 70px;
+  padding: 50px 50px 70px;
   margin: 0 auto;
   max-width: 1280px; }
+  @media (max-width: 950px) {
+    .services {
+      padding: 50px 35px 70px; } }
   .services__title {
     margin-bottom: 0;
     padding-bottom: 15px;
@@ -397,7 +422,8 @@ button {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    align-items: center; }
   .services__services-cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -408,6 +434,12 @@ button {
     @media (max-width: 1279px) {
       .services__services-cards {
         width: 870px; } }
+    @media (max-width: 969px) {
+      .services__services-cards {
+        width: 580px; } }
+    @media (max-width: 679px) {
+      .services__services-cards {
+        max-width: 300px; } }
 
 .services-card {
   -webkit-box-sizing: border-box;
@@ -455,6 +487,9 @@ button {
   padding: 50px 60px 100px;
   margin: 0 auto;
   max-width: 1280px; }
+  @media (max-width: 950px) {
+    .doctors {
+      padding: 50px 35px 100px; } }
   .doctors__title {
     margin-bottom: 0;
     padding-bottom: 15px;
@@ -519,9 +554,12 @@ button {
       display: none; }
 
 .promotions-discounts {
-  padding: 50px 60px 80px;
+  padding: 50px 60px 100px;
   margin: 0 auto;
   max-width: 1280px; }
+  @media (max-width: 950px) {
+    .promotions-discounts {
+      padding: 50px 35px 100px; } }
   .promotions-discounts__title {
     font-size: 46px;
     margin-bottom: 80px; }
@@ -530,6 +568,9 @@ button {
   padding: 50px 60px 100px;
   margin: 0 auto;
   max-width: 1280px; }
+  @media (max-width: 950px) {
+    .reviews {
+      padding: 50px 35px 100px; } }
   .reviews__title {
     margin-bottom: 0;
     padding-bottom: 15px;
@@ -580,6 +621,9 @@ button {
   padding: 50px 60px 100px;
   margin: 0 auto;
   max-width: 1280px; }
+  @media (max-width: 950px) {
+    .contacts {
+      padding: 50px 35px 100px; } }
   .contacts__inner {
     display: -webkit-box;
     display: -ms-flexbox;
