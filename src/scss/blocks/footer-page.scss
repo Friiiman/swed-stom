@@ -3,6 +3,10 @@
   background-color: $footer-page-color;
   border-top: 1px solid $gray;
 
+  @media (max-width: $screen-md) {
+    padding: 10px 35px;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -17,6 +21,7 @@
       position: relative;
       display: inline-flex;
       margin-right: 10px;
+      height: 32px;
 
       &:last-child {
         margin-right: 0;

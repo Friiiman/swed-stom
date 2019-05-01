@@ -2,9 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 50px 60px 70px;
+  padding: 50px 50px 70px;
   margin: 0 auto;
   max-width: 1280px;
+
+  @media (max-width: $screen-md) {
+    padding: 50px 35px 70px;
+  }
 
   &__title {
     margin-bottom: 0;
@@ -23,6 +27,7 @@
     align-items: center;
     width: 100%;
     justify-content: center;
+    align-items: center;
   }
 
   &__services-cards {
@@ -32,6 +37,14 @@
 
     @media (max-width: 1279px) {
       width: 870px;
+    }
+
+    @media (max-width: 969px) {
+      width: 580px;
+    }
+
+    @media (max-width: 679px) {
+      max-width: 300px;
     }
   }
 }

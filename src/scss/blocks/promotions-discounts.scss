@@ -1,7 +1,11 @@
 .promotions-discounts {
-  padding: 50px 60px 80px;
+  padding: 50px 60px 100px;
   margin: 0 auto;
   max-width: 1280px;
+
+  @media (max-width: $screen-md) {
+    padding: 50px 35px 100px;
+  }
 
   &__title {
     font-size: 46px;

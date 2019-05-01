@@ -1,10 +1,15 @@
 .advantages {
   background-color: $white;
+  padding-bottom: 80px;
 
   &__inner {
     margin: 0 auto;
     padding: 60px 60px 0;
     max-width: 1280px;
+
+    @media (max-width: $screen-md) {
+      padding: 60px 35px 0;
+    }
   }
 
   &__title {
@@ -36,6 +41,10 @@
     &:first-of-type:before {
       content: '';
       border-top: none;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
     }
 
     & p {

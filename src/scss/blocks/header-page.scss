@@ -8,6 +8,10 @@
   z-index: 10;
   border-bottom: 1px solid $gray;
 
+  @media (max-width: $screen-md) {
+    padding: 10px 35px;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
