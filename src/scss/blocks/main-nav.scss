@@ -1,6 +1,10 @@
 .main-nav {
-  width: 70%;
+  width: 100%;
   text-align: right;
+
+  &__list {
+    position: relative;
+  }
 
   &__item {
     display: inline-flex;
@@ -26,6 +30,50 @@
         width: 100%;
         border-bottom: 1px solid $main-color;
       }
+    }
+  }
+
+  &__time {
+    list-style-type: none;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+  }
+
+  &__time-item {
+    color: $gray-dark;
+  }
+
+  &__phone {
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+  }
+
+  &__phone-inner {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  &__phone-list {
+    display: flex;
+    flex-direction: column;
+    text-align-last: left;
+    margin-left: 10px;
+  }
+
+  &__phone-title {
+    color: $gray-dark;
+  }
+
+  &__phone-item {
+    color: $main-color;
+
+    &:first-of-type {
+      margin: 1px 0 8px;
     }
   }
 }

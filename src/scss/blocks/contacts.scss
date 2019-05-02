@@ -1,7 +1,7 @@
 .contacts {
   padding: 50px 60px 100px;
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1160px;
 
   @media (max-width: $screen-md) {
     padding: 50px 35px 100px;
@@ -29,10 +29,10 @@
     width: 45%;
   }
 
-  &__text-img {
-    width: 450px;
+  &__slider-item {
+    width: 500px;
     height: 400px;
-    box-shadow: 0 0 10px 5px $gray-dark;
-    border: 2px solid $main-color;
+    box-shadow: 0 0 10px 5px $gray;
+    border: 1px solid $main-color;
   }
 }

@@ -24,4 +24,9 @@ $(document).ready(function($){
   });
 
 
+  // $('.main-nav__phone-title').click(function(){
+  //     $('.main-nav__phone-list').toggleClass('main-nav__phone-list--hide');
+  // });
+
+
 });
