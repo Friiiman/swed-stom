@@ -137,9 +137,7 @@ button {
     color: #449bda;
     background-color: #ededed;
     -webkit-box-shadow: 0 0 10px 5px #ababab;
-            box-shadow: 0 0 10px 5px #ababab;
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1); }
+            box-shadow: 0 0 10px 5px #ababab; }
 
 .header-page {
   padding: 10px 60px;
@@ -160,7 +158,9 @@ button {
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
-    max-width: 1280px; }
+    max-width: 1160px; }
+  .header-page__logo {
+    width: 220px; }
 
 .main-page {
   position: relative; }
@@ -184,14 +184,23 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 1280px;
+    max-width: 1160px;
     margin: 0 auto; }
+  .footer-page__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
   .footer-page__social-item {
-    position: relative;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    position: relative;
     margin-right: 10px;
+    width: 32px;
     height: 32px; }
     .footer-page__social-item:last-child {
       margin-right: 0; }
@@ -206,8 +215,10 @@ button {
       display: none; }
 
 .main-nav {
-  width: 70%;
+  width: 100%;
   text-align: right; }
+  .main-nav__list {
+    position: relative; }
   .main-nav__item {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -228,6 +239,48 @@ button {
         bottom: -3px;
         width: 100%;
         border-bottom: 1px solid #449bda; }
+  .main-nav__time {
+    list-style-type: none;
+    position: absolute;
+    top: -20px;
+    left: 30px; }
+  .main-nav__time-item {
+    color: #828282; }
+  .main-nav__phone {
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    left: 30px; }
+  .main-nav__phone-inner {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .main-nav__phone-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -moz-text-align-last: left;
+         text-align-last: left;
+    margin-left: 10px; }
+  .main-nav__phone-title {
+    color: #828282; }
+  .main-nav__phone-item {
+    color: #449bda; }
+    .main-nav__phone-item:first-of-type {
+      margin: 1px 0 8px; }
 
 .promo {
   height: 700px;
@@ -255,7 +308,7 @@ button {
   background-color: #ffffff;
   border-top: 1px solid #ababab; }
   .about__inner {
-    max-width: 1280px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 0 60px; }
     @media (max-width: 950px) {
@@ -276,7 +329,7 @@ button {
   .advantages__inner {
     margin: 0 auto;
     padding: 60px 60px 0;
-    max-width: 1280px; }
+    max-width: 1160px; }
     @media (max-width: 950px) {
       .advantages__inner {
         padding: 60px 35px 0; } }
@@ -385,7 +438,7 @@ button {
 .slider {
   padding: 0 60px 100px;
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1160px;
   background-color: #ffffff; }
 
 .services {
@@ -400,7 +453,7 @@ button {
           flex-direction: row;
   padding: 50px 50px 70px;
   margin: 0 auto;
-  max-width: 1280px; }
+  max-width: 1160px; }
   @media (max-width: 950px) {
     .services {
       padding: 50px 35px 70px; } }
@@ -486,7 +539,7 @@ button {
 .doctors {
   padding: 50px 60px 100px;
   margin: 0 auto;
-  max-width: 1280px; }
+  max-width: 1160px; }
   @media (max-width: 950px) {
     .doctors {
       padding: 50px 35px 100px; } }
@@ -556,7 +609,7 @@ button {
 .promotions-discounts {
   padding: 50px 60px 100px;
   margin: 0 auto;
-  max-width: 1280px; }
+  max-width: 1160px; }
   @media (max-width: 950px) {
     .promotions-discounts {
       padding: 50px 35px 100px; } }
@@ -567,7 +620,7 @@ button {
 .reviews {
   padding: 50px 60px 100px;
   margin: 0 auto;
-  max-width: 1280px; }
+  max-width: 1160px; }
   @media (max-width: 950px) {
     .reviews {
       padding: 50px 35px 100px; } }
@@ -620,7 +673,7 @@ button {
 .contacts {
   padding: 50px 60px 100px;
   margin: 0 auto;
-  max-width: 1280px; }
+  max-width: 1160px; }
   @media (max-width: 950px) {
     .contacts {
       padding: 50px 35px 100px; } }
@@ -652,12 +705,12 @@ button {
             justify-content: space-between;
     margin-right: 30px;
     width: 45%; }
-  .contacts__text-img {
-    width: 450px;
+  .contacts__slider-item {
+    width: 500px;
     height: 400px;
-    -webkit-box-shadow: 0 0 10px 5px #828282;
-            box-shadow: 0 0 10px 5px #828282;
-    border: 2px solid #449bda; }
+    -webkit-box-shadow: 0 0 10px 5px #ababab;
+            box-shadow: 0 0 10px 5px #ababab;
+    border: 1px solid #449bda; }
 
 .contacts-card {
   padding-bottom: 40px;
@@ -699,7 +752,7 @@ button {
 
 .map {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1160px;
   height: 350px; }
 
 /*# sourceMappingURL=style.css.map */
