@@ -292,7 +292,7 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  background-image: url("http://www.emdentic.pl/obrazki/baner-sg/obrazek-1.jpg");
+  background-image: url(../img/promo-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2; }
