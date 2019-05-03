@@ -370,6 +370,13 @@ button {
       font-weight: normal;
       font-style: italic;
       font-size: 16px; }
+  .advantages__item-link {
+    color: #449bda;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    font-style: normal; }
+    .advantages__item-link:hover {
+      color: #828282; }
   .advantages__item-individual:after {
     content: '';
     position: absolute;
