@@ -227,8 +227,8 @@ button {
     position: relative;
     margin-left: 20px;
     color: #828282;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
+    -webkit-transition: all .5s;
+    transition: all .5s; }
     .main-nav__link:hover {
       color: #449bda; }
     .main-nav__link--active {
@@ -278,7 +278,9 @@ button {
   .main-nav__phone-title {
     color: #828282; }
   .main-nav__phone-item {
-    color: #449bda; }
+    color: #449bda;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
     .main-nav__phone-item:first-of-type {
       margin: 1px 0 8px; }
     .main-nav__phone-item:hover {
@@ -290,7 +292,7 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  background-image: url(../img/promo-bg.jpg);
+  background-image: url("http://www.emdentic.pl/obrazki/baner-sg/obrazek-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2; }
@@ -568,7 +570,7 @@ button {
     content: '';
     position: absolute;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1160px;
     top: -40px;
     border-top: 2px solid #ababab; }
   .doctors-card:first-of-type:before {
@@ -587,11 +589,12 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 30px; }
+    padding-left: 30px;
+    text-align: center; }
   .doctors-card__img-wrap {
     margin-bottom: 20px;
-    width: 250px;
-    height: 350px;
+    width: 245px;
+    height: 345px;
     overflow: hidden;
     -webkit-box-shadow: 5px 5px 10px 3px #ababab;
             box-shadow: 5px 5px 10px 3px #ababab; }
@@ -604,9 +607,14 @@ button {
   .doctors-card__text {
     margin-top: 20px;
     margin-left: 50px;
-    padding-right: 30px; }
+    padding-right: 30px;
+    width: 85%; }
     .doctors-card__text--hide {
       display: none; }
+  .doctors-card__text-more ul {
+    margin-bottom: 16px; }
+  .doctors-card__text-more li {
+    margin: 16px 0 0 20px; }
 
 .promotions-discounts {
   padding: 50px 60px 100px;
