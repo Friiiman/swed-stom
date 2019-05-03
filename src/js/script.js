@@ -29,4 +29,11 @@ $(document).ready(function($){
   // });
 
 
+  $('#burger__item').click(function(menuOpen){
+    // menuOpen.eventDefault();
+    $(this).toggleClass('burger__item-open');
+    $('.main-nav').toggleClass('main-nav--active');
+  });
+
+
 });

@@ -44,4 +44,39 @@
       display: none;
     }
   }
+
+  &__nav {
+    text-align: right;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__nav-item {
+    display: inline-flex;
+  }
+
+  &__nav-link {
+    position: relative;
+    margin-left: 20px;
+    color: $gray-dark;
+    transition: all .5s;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  &__nav-link--active {
+    color: $main-color;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      width: 100%;
+      border-bottom: 1px solid $main-color;
+    }
+  }
 }
