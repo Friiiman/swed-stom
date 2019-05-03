@@ -281,6 +281,8 @@ button {
     color: #449bda; }
     .main-nav__phone-item:first-of-type {
       margin: 1px 0 8px; }
+    .main-nav__phone-item:hover {
+      color: #828282; }
 
 .promo {
   height: 700px;
