@@ -14,7 +14,7 @@
     position: relative;
     margin-left: 20px;
     color: $gray-dark;
-    transition: all 0.5s;
+    transition: all .5s;
 
     &:hover {
       color: $main-color;
@@ -71,6 +71,7 @@
 
   &__phone-item {
     color: $main-color;
+    transition: all .5s;
 
     &:first-of-type {
       margin: 1px 0 8px;

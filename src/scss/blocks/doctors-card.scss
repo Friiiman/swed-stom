@@ -8,7 +8,7 @@
     content: '';
     position: absolute;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1160px;
     top: -40px;
     border-top: 2px solid $gray;
   }
@@ -27,12 +27,13 @@
     flex-direction: column;
     align-items: center;
     padding-left: 30px;
+    text-align: center;
   }
 
   &__img-wrap {
     margin-bottom: 20px;
-    width: 250px;
-    height: 350px;
+    width: 245px;
+    height: 345px;
     // border: 2px solid $main-color;
     // border-radius: 10px;
     overflow: hidden;
@@ -53,9 +54,19 @@
     margin-top: 20px;
     margin-left: 50px;
     padding-right: 30px;
+    width: 85%;
+    // max-width: 788px;
 
     &--hide {
       display: none;
     }
+  }
+
+  &__text-more ul {
+    margin-bottom: 16px;
+  }
+
+  &__text-more li {
+    margin: 16px 0 0 20px;
   }
 }
