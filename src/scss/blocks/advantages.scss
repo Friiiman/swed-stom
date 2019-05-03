@@ -54,6 +54,16 @@
     }
   }
 
+  &__item-link {
+    color: $main-color;
+    transition: all .5s;
+    font-style: normal;
+
+    &:hover {
+      color: $gray-dark;
+    }
+  }
+
   &__item-individual:after {
     content: '';
     position: absolute;
