@@ -122,9 +122,12 @@ dl {
   margin: 0; }
 
 button {
+  width: 155px;
+  height: 36px;
   margin-top: 10px;
   padding: 5px 8px;
   font-size: 14px;
+  text-align: center;
   font-weight: bold;
   color: #24292e;
   background-color: #ffffff;
@@ -136,8 +139,9 @@ button {
   button:hover {
     color: #449bda;
     background-color: #ededed;
-    -webkit-box-shadow: 0 0 10px 5px #ababab;
-            box-shadow: 0 0 10px 5px #ababab; }
+    -webkit-box-shadow: inset 0 0 4px 2px #828282;
+            box-shadow: inset 0 0 4px 2px #828282;
+    font-size: 13px; }
 
 .header-page {
   padding: 10px 60px;
