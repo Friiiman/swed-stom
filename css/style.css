@@ -370,11 +370,11 @@ button {
     display: inline-block;
     top: 25px;
     left: -100px;
-    background-image: url(../img/person.png);
-    width: 70px;
+    background-image: url(../img/sprite-advantages.png);
+    width: 100px;
     height: 70px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -10px -365px;
     background-size: 100%; }
   .advantages__item-equipment:after {
     content: '';
@@ -382,11 +382,11 @@ button {
     display: inline-block;
     top: 25px;
     left: -100px;
-    background-image: url(../img/gear.png);
-    width: 70px;
-    height: 70px;
+    background-image: url(../img/sprite-advantages.png);
+    width: 100px;
+    height: 80px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -10px 0;
     background-size: 100%; }
   .advantages__item-specialist:after {
     content: '';
@@ -394,11 +394,11 @@ button {
     display: inline-block;
     top: 25px;
     left: -100px;
-    background-image: url(../img/doctor.png);
-    width: 70px;
+    background-image: url(../img/sprite-advantages.png);
+    width: 100px;
     height: 70px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -10px -155px;
     background-size: 100%; }
   .advantages__item-materials:after {
     content: '';
@@ -406,11 +406,11 @@ button {
     display: inline-block;
     top: 25px;
     left: -100px;
-    background-image: url(../img/med-bag.png);
-    width: 70px;
+    background-image: url(../img/sprite-advantages.png);
+    width: 100px;
     height: 70px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -10px -305px;
     background-size: 100%; }
   .advantages__item-care:after {
     content: '';
@@ -418,11 +418,11 @@ button {
     display: inline-block;
     top: 25px;
     left: -100px;
-    background-image: url(../img/care.png);
-    width: 70px;
+    background-image: url(../img/sprite-advantages.png);
+    width: 100px;
     height: 70px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -10px -85px;
     background-size: 100%; }
   .advantages__item-trust:after {
     content: '';
@@ -430,11 +430,11 @@ button {
     display: inline-block;
     top: 25px;
     left: -100px;
-    background-image: url(../img/like.png);
-    width: 70px;
+    background-image: url(../img/sprite-advantages.png);
+    width: 100px;
     height: 70px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -10px -230px;
     background-size: 100%; }
 
 .slider {
