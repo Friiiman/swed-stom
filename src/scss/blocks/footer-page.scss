@@ -3,8 +3,16 @@
   background-color: $footer-page-color;
   border-top: 1px solid $gray;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: $screen-xmd) {
     padding: 10px 35px;
+  }
+
+  @media (max-width: $screen-md) {
+    padding: 10px 20px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 10px 10px;
   }
 
   &__inner {
@@ -49,12 +57,26 @@
     text-align: right;
   }
 
-  &__list {
+  &__nav-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    @media (max-width: 800px) {
+      width: 400px;
+    }
+
+    @media (max-width: 550px) {
+      display: none;
+    }
   }
 
   &__nav-item {
-    display: inline-flex;
+    display: inline-block;
+
+    @media (max-width: 800px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__nav-link {

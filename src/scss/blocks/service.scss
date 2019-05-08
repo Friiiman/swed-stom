@@ -1,0 +1,31 @@
+.service {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  @media (max-width: $screen-xmd) {
+    padding: 0 35px;
+  }
+
+  @media (max-width: $screen-md) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 0 10px;
+  }
+
+  &__title {
+    font-size: 46px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+
+  &__catalog {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 100px;
+    max-width: 1000px;
+    border: 1px solid $gray;
+  }
+}

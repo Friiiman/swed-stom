@@ -3,7 +3,7 @@
   margin: 0 auto;
   max-width: 1160px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: $screen-xmd) {
     padding: 50px 35px 100px;
   }
 
@@ -29,10 +29,66 @@
     width: 45%;
   }
 
+  &__slider {
+    position: relative;
+    width: 500px;
+    border: 1px solid $main-color;
+
+    & .slick-prev,
+    & .slick-next {
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      bottom: -60px;
+      border-radius: 50%;
+      font-size: 0;
+      background-color: $main-color;
+      transition: all 0s;
+    }
+
+    & .slick-prev:hover,
+    & .slick-next:hover {
+      background-color: $white;
+      box-shadow: none;
+    }
+
+    & .slick-prev:before,
+    & .slick-next:before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url(../img/right-arrow.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    & .slick-prev:hover:before,
+    & .slick-next:hover:before {
+      background-image: url(../img/right-arrow-blue.svg);
+    }
+
+    & .slick-prev {
+      left: 150px;
+    }
+
+    & .slick-prev:before {
+      transform: rotate(180deg);
+    }
+
+    & .slick-next {
+      right: 150px;
+    }
+
+    & .slick-next:before {
+      background-position: 2px 0;
+    }
+  }
+
   &__slider-item {
     width: 500px;
     height: 400px;
-    box-shadow: 0 0 10px 5px $gray;
     border: 1px solid $main-color;
+    box-sizing: border-box;
   }
 }

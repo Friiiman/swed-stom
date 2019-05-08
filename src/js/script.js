@@ -36,4 +36,8 @@ $(document).ready(function($){
   });
 
 
+  $('.js-contacts__slider').slick({
+  });
+
+
 });

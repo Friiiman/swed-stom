@@ -7,7 +7,7 @@
     padding: 60px 60px 0;
     max-width: 1160px;
 
-    @media (max-width: $screen-md) {
+    @media (max-width: $screen-xmd) {
       padding: 60px 35px 0;
     }
   }
@@ -64,87 +64,46 @@
     }
   }
 
-  &__item-individual:after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    top: 25px;
-    left: -100px;
-    background-image: url(../img/sprite-advantages.png);
-    width: 100px;
-    height: 70px;
-    background-repeat: no-repeat;
-    background-position: -10px -365px;
-    background-size: 100%;
-  }
-
-  &__item-equipment:after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    top: 25px;
-    left: -100px;
-    background-image: url(../img/sprite-advantages.png);
-    width: 100px;
-    height: 80px;
-    background-repeat: no-repeat;
-    background-position: -10px 0;
-    background-size: 100%;
-  }
-
-  &__item-specialist:after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    top: 25px;
-    left: -100px;
-    background-image: url(../img/sprite-advantages.png);
-    width: 100px;
-    height: 70px;
-    background-repeat: no-repeat;
-    background-position: -10px -155px;
-    background-size: 100%;
-  }
-
-  &__item-materials:after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    top: 25px;
-    left: -100px;
-    background-image: url(../img/sprite-advantages.png);
-    width: 100px;
-    height: 70px;
-    background-repeat: no-repeat;
-    background-position: -10px -305px;
-    background-size: 100%;
-  }
-
-  &__item-care:after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    top: 25px;
-    left: -100px;
-    background-image: url(../img/sprite-advantages.png);
-    width: 100px;
-    height: 70px;
-    background-repeat: no-repeat;
-    background-position: -10px -85px;
-    background-size: 100%;
-  }
-
+  &__item-individual:after,
+  &__item-equipment:after,
+  &__item-specialist:after,
+  &__item-materials:after,
+  &__item-care:after,
   &__item-trust:after {
     content: '';
     position: absolute;
     display: inline-block;
-    top: 25px;
-    left: -100px;
-    background-image: url(../img/sprite-advantages.png);
     width: 100px;
     height: 70px;
+    top: 5px;
+    left: -100px;
+    background-image: url(../img/sprite-advantages.png);
     background-repeat: no-repeat;
-    background-position: -10px -230px;
     background-size: 100%;
+  }
+
+  &__item-individual:after {
+    background-position: -10px -365px;
+  }
+
+  &__item-equipment:after {
+    height: 80px;
+    background-position: -10px 0;
+  }
+
+  &__item-specialist:after {
+    background-position: -10px -155px;
+  }
+
+  &__item-materials:after {
+    background-position: -10px -305px;
+  }
+
+  &__item-care:after {
+    background-position: -10px -85px;
+  }
+
+  &__item-trust:after {
+    background-position: -10px -230px;
   }
 }

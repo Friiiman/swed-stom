@@ -1,6 +1,5 @@
 .about {
   margin: 590px 0 0;
-  // overflow: hidden;
   background-color: $white;
   border-top: 1px solid $gray;
 
@@ -9,8 +8,16 @@
     margin: 0 auto;
     padding: 0 60px;
 
-    @media (max-width: $screen-md) {
+    @media (max-width: $screen-xmd) {
       padding: 0 35px;
+    }
+
+    @media (max-width: $screen-md) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding: 0 10px;
     }
   }
 
