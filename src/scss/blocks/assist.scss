@@ -1,10 +1,10 @@
-.doctors {
-  padding: 50px 60px 80px;
+.assist {
+  padding: 0 60px 100px;
   margin: 0 auto;
   max-width: 1160px;
 
   @media (max-width: $screen-xmd) {
-    padding: 50px 35px 50px;
+    padding: 0 35px 100px;
   }
 
   &__title {
