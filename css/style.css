@@ -96,7 +96,7 @@
 
 * {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #24292e; }
 
 body {
@@ -180,6 +180,9 @@ button {
     width: 200px;
     left: 250px;
     top: 10px; }
+    @media (max-width: 499px) {
+      .header-page__text {
+        display: none; } }
   .header-page__time {
     list-style-type: none;
     color: #828282; }
@@ -509,7 +512,7 @@ button {
     font-size: 24px; }
 
 .about {
-  margin: 590px 0 0;
+  margin: 550px 0 0;
   background-color: #ffffff;
   border-top: 1px solid #ababab; }
   .about__inner {
@@ -682,7 +685,11 @@ button {
   border: 2px solid #449bda;
   overflow: hidden;
   -webkit-transition: all .5s;
-  transition: all .5s; }
+  transition: all .5s;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
   .services-card:hover {
     -webkit-box-shadow: 0 0 10px 5px #ababab;
             box-shadow: 0 0 10px 5px #ababab;
@@ -707,12 +714,12 @@ button {
     transition: all .5s; }
 
 .doctors {
-  padding: 50px 60px 100px;
+  padding: 50px 60px 80px;
   margin: 0 auto;
   max-width: 1160px; }
   @media (max-width: 950px) {
     .doctors {
-      padding: 50px 35px 100px; } }
+      padding: 50px 35px 50px; } }
   .doctors__title {
     margin-bottom: 0;
     padding-bottom: 15px;
@@ -783,6 +790,72 @@ button {
   .doctors-card__text-more li {
     margin: 16px 0 0 20px; }
 
+.assist {
+  padding: 0 60px 100px;
+  margin: 0 auto;
+  max-width: 1160px; }
+  @media (max-width: 950px) {
+    .assist {
+      padding: 0 35px 100px; } }
+  .assist__title {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    font-size: 46px; }
+  .assist__text {
+    margin: 0;
+    padding-bottom: 80px;
+    font-style: italic; }
+
+.assist-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 80px; }
+  .assist-card:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 1160px;
+    top: -40px;
+    border-top: 2px solid #ababab; }
+  .assist-card:first-of-type:before {
+    content: '';
+    border-top: none; }
+  .assist-card:last-of-type {
+    margin-bottom: 0; }
+  .assist-card__personality {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 30px;
+    width: 245px;
+    text-align: center; }
+  .assist-card__img-wrap {
+    margin-bottom: 20px;
+    width: 245px;
+    height: 345px;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 10px 3px #ababab;
+            box-shadow: 5px 5px 10px 3px #ababab; }
+  .assist-card__img {
+    width: 100%;
+    height: auto; }
+  .assist-card__name {
+    font-weight: bold;
+    font-size: 20px; }
+
 .promotions-discounts {
   padding: 50px 60px 100px;
   margin: 0 auto;
@@ -819,7 +892,7 @@ button {
 
 .reviews-card {
   position: relative;
-  padding: 0 15px;
+  padding: 10px 15px;
   margin-bottom: 80px;
   border: 2px solid #449bda;
   border-radius: 15px; }
@@ -867,6 +940,15 @@ button {
             justify-content: space-between;
     padding-left: 3px;
     padding-bottom: 100px; }
+    @media (max-width: 1130px) {
+      .contacts__inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   .contacts__title {
     font-size: 46px;
     margin-bottom: 0;
@@ -882,9 +964,25 @@ button {
             justify-content: space-between;
     margin-right: 30px;
     width: 45%; }
+    @media (max-width: 1130px) {
+      .contacts__text {
+        width: 70%; } }
+    @media (max-width: 750px) {
+      .contacts__text {
+        width: 90%; } }
+    @media (max-width: 650px) {
+      .contacts__text {
+        width: 100%; } }
+    @media (max-width: 545px) {
+      .contacts__text {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .contacts__slider {
     position: relative;
     width: 500px;
+    height: 400px;
     border: 1px solid #449bda; }
     .contacts__slider .slick-prev,
     .contacts__slider .slick-next {
@@ -976,7 +1074,7 @@ button {
 .service {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 60px; }
+  padding: 50px 60px 0; }
   @media (max-width: 950px) {
     .service {
       padding: 0 35px; } }
@@ -989,7 +1087,23 @@ button {
   .service__title {
     font-size: 46px;
     margin-bottom: 0;
-    padding-bottom: 50px; }
+    padding-bottom: 15px; }
+  .service__text {
+    margin-bottom: 50px; }
+  .service__text p {
+    margin: 0;
+    padding-bottom: 15px; }
+  .service__text-more {
+    margin-bottom: 100px; }
+  .service__text-more h3 {
+    margin-bottom: 15px;
+    font-size: 28px; }
+  .service__text-more p {
+    margin: 15px 0; }
+  .service__text-more ul {
+    margin-bottom: 16px; }
+  .service__text-more ul li {
+    margin: 10px 0 0 18px; }
   .service__catalog {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -998,9 +1112,15 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 auto 100px;
+    margin: 0 auto 50px;
     max-width: 1000px;
     border: 1px solid #ababab; }
+  .service__link {
+    color: #449bda;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+    .service__link:hover {
+      color: #828282; }
 
 .service-card {
   display: -webkit-box;
@@ -1029,5 +1149,26 @@ button {
   .service-card__price {
     width: 25%;
     padding: 15px 40px 0 15px; }
+
+.back-button {
+  position: fixed;
+  display: block;
+  width: 90px;
+  padding: 10px 15px 20px;
+  top: 50%;
+  right: -45px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #ededed;
+  background-color: #828282;
+  border: 1px solid #449bda;
+  border-radius: 15px 15px 0 0;
+  opacity: .2;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+  .back-button:hover {
+    opacity: 1;
+    -webkit-box-shadow: -3px -2px 4px 1px #ababab;
+            box-shadow: -3px -2px 4px 1px #ababab; }
 
 /*# sourceMappingURL=style.css.map */
