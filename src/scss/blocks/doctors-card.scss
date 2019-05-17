@@ -4,6 +4,10 @@
   flex-direction: row;
   margin-bottom: 80px;
 
+  @media (max-width: $screen-md) {
+    flex-direction: column;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -29,14 +33,16 @@
     padding-left: 30px;
     width: 245px;
     text-align: center;
+
+    @media (max-width: $screen-md) {
+      padding-left: 0;
+    }
   }
 
   &__img-wrap {
     margin-bottom: 20px;
     width: 245px;
     height: 345px;
-    // border: 2px solid $main-color;
-    // border-radius: 10px;
     overflow: hidden;
     box-shadow: 5px 5px 10px 3px $gray;
   }
@@ -56,7 +62,10 @@
     margin-left: 50px;
     padding-right: 30px;
     width: 85%;
-    // max-width: 788px;
+
+    @media (max-width: $screen-md) {
+      margin-left: 10px;
+    }
 
     &--hide {
       display: none;
@@ -69,5 +78,9 @@
 
   &__text-more li {
     margin: 16px 0 0 20px;
+
+    @media (max-width: $screen-md) {
+      margin-left: 0;
+    }
   }
 }

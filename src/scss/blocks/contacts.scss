@@ -17,6 +17,7 @@
     @media (max-width: 1130px) {
       flex-direction: column;
       align-items: center;
+      padding-bottom: 150px;
     }
   }
 
@@ -56,6 +57,16 @@
     height: 400px;
     border: 1px solid $main-color;
 
+    @media (max-width: 550px) {
+      width: 350px;
+      height: 300px;
+    }
+
+    @media (max-width: 400px) {
+      width: 300px;
+      height: 250px;
+    }
+
     & .slick-prev,
     & .slick-next {
       position: absolute;
@@ -91,7 +102,7 @@
     }
 
     & .slick-prev {
-      left: 150px;
+      left: 25%;
     }
 
     & .slick-prev:before {
@@ -99,7 +110,7 @@
     }
 
     & .slick-next {
-      right: 150px;
+      right: 25%;
     }
 
     & .slick-next:before {
@@ -112,5 +123,15 @@
     height: 400px;
     border: 1px solid $main-color;
     box-sizing: border-box;
+
+    @media (max-width: 549px) {
+      width: 350px;
+      height: 300px;
+    }
+
+    @media (max-width: 400px) {
+      width: 300px;
+      height: 250px;
+    }
   }
 }

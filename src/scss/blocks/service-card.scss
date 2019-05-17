@@ -21,5 +21,9 @@
   &__price {
     width: 25%;
     padding: 15px 40px 0 15px;
+
+    @media (max-width: $screen-md) {
+      padding-right: 10px;
+    }
   }
 }
