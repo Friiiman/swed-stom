@@ -111,6 +111,9 @@ h1,
 h2 {
   color: #449bda; }
 
+h2 {
+  line-height: 1.2; }
+
 a,
 blockquote {
   text-decoration: none; }
@@ -739,6 +742,12 @@ button {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 80px; }
+  @media (max-width: 750px) {
+    .doctors-card {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .doctors-card:before {
     content: '';
     position: absolute;
@@ -765,6 +774,9 @@ button {
     padding-left: 30px;
     width: 245px;
     text-align: center; }
+    @media (max-width: 750px) {
+      .doctors-card__personality {
+        padding-left: 0; } }
   .doctors-card__img-wrap {
     margin-bottom: 20px;
     width: 245px;
@@ -783,12 +795,18 @@ button {
     margin-left: 50px;
     padding-right: 30px;
     width: 85%; }
+    @media (max-width: 750px) {
+      .doctors-card__text {
+        margin-left: 10px; } }
     .doctors-card__text--hide {
       display: none; }
   .doctors-card__text-more ul {
     margin-bottom: 16px; }
   .doctors-card__text-more li {
     margin: 16px 0 0 20px; }
+    @media (max-width: 750px) {
+      .doctors-card__text-more li {
+        margin-left: 0; } }
 
 .assist {
   padding: 0 60px 100px;
@@ -816,6 +834,12 @@ button {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 80px; }
+  @media (max-width: 750px) {
+    .assist-card {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .assist-card:before {
     content: '';
     position: absolute;
@@ -842,6 +866,9 @@ button {
     padding-left: 30px;
     width: 245px;
     text-align: center; }
+    @media (max-width: 750px) {
+      .assist-card__personality {
+        padding-left: 0; } }
   .assist-card__img-wrap {
     margin-bottom: 20px;
     width: 245px;
@@ -948,7 +975,8 @@ button {
                 flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center; } }
+                align-items: center;
+        padding-bottom: 150px; } }
   .contacts__title {
     font-size: 46px;
     margin-bottom: 0;
@@ -984,6 +1012,14 @@ button {
     width: 500px;
     height: 400px;
     border: 1px solid #449bda; }
+    @media (max-width: 550px) {
+      .contacts__slider {
+        width: 350px;
+        height: 300px; } }
+    @media (max-width: 400px) {
+      .contacts__slider {
+        width: 300px;
+        height: 250px; } }
     .contacts__slider .slick-prev,
     .contacts__slider .slick-next {
       position: absolute;
@@ -1013,12 +1049,12 @@ button {
     .contacts__slider .slick-next:hover:before {
       background-image: url(../img/right-arrow-blue.svg); }
     .contacts__slider .slick-prev {
-      left: 150px; }
+      left: 25%; }
     .contacts__slider .slick-prev:before {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); }
     .contacts__slider .slick-next {
-      right: 150px; }
+      right: 25%; }
     .contacts__slider .slick-next:before {
       background-position: 2px 0; }
   .contacts__slider-item {
@@ -1027,25 +1063,35 @@ button {
     border: 1px solid #449bda;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
+    @media (max-width: 549px) {
+      .contacts__slider-item {
+        width: 350px;
+        height: 300px; } }
+    @media (max-width: 400px) {
+      .contacts__slider-item {
+        width: 300px;
+        height: 250px; } }
 
 .contacts-card {
   padding-bottom: 40px;
   width: 40%; }
+  @media (max-width: 550px) {
+    .contacts-card {
+      width: 100%; } }
   .contacts-card:last-of-type {
     margin-right: 0; }
   .contacts-card__title {
     padding-bottom: 10px;
     margin: 0;
     font-size: 22px; }
-  .contacts-card__underground {
+  .contacts-card__text-underground {
     position: relative; }
-    .contacts-card__underground:after {
+    .contacts-card__text-underground:after {
       content: '';
       position: absolute;
       display: inline-block;
       width: 30px;
       height: 20px;
-      top: 38px;
       left: 155px;
       background-image: url(../img/metro-line1.png);
       background-repeat: no-repeat;
@@ -1120,7 +1166,7 @@ button {
     -webkit-transition: all .5s;
     transition: all .5s; }
     .service__link:hover {
-      color: #828282; }
+      color: #ababab; }
 
 .service-card {
   display: -webkit-box;
@@ -1149,6 +1195,9 @@ button {
   .service-card__price {
     width: 25%;
     padding: 15px 40px 0 15px; }
+    @media (max-width: 750px) {
+      .service-card__price {
+        padding-right: 10px; } }
 
 .back-button {
   position: fixed;
@@ -1159,13 +1208,14 @@ button {
   right: -45px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  color: #ededed;
-  background-color: #828282;
+  color: #828282;
+  background-color: #f3cfcf;
   border: 1px solid #449bda;
   border-radius: 15px 15px 0 0;
   opacity: .2;
   -webkit-transition: all .5s;
-  transition: all .5s; }
+  transition: all .5s;
+  z-index: 10; }
   .back-button:hover {
     opacity: 1;
     -webkit-box-shadow: -3px -2px 4px 1px #ababab;
