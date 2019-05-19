@@ -9,9 +9,5 @@
     color: $main-color;
     font-size: 12px;
     font-weight: bold;
-
-    @media (max-width: 400px) {
-      right: -25px;
-    }
   }
 }

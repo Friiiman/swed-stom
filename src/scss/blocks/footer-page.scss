@@ -11,11 +11,16 @@
     padding: 10px 20px;
   }
 
+  @media (max-width: 499px) {
+    height: 85px;
+  }
+
   @media (max-width: $screen-sm) {
     padding: 10px 10px;
   }
 
   &__inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,6 +104,52 @@
       bottom: -3px;
       width: 100%;
       border-bottom: 1px solid $main-color;
+    }
+  }
+
+  //*****PHONE & TIME*****
+  &__text {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media (max-width: 499px) {
+      display: block;
+    }
+  }
+
+  &__time {
+    list-style-type: none;
+    color: $gray-dark;
+  }
+
+  &__phone {
+    display: flex;
+    margin-top: 7px;
+  }
+
+  &__phone-list {
+    display: flex;
+    flex-direction: column;
+    text-align-last: left;
+    margin-left: 10px;
+  }
+
+  &__phone-title {
+    color: $gray-dark;
+  }
+
+  &__phone-item {
+    color: $main-color;
+    transition: all .5s;
+
+    &:first-of-type {
+      margin: 1px 0 8px;
+    }
+
+    &:hover {
+      color: $gray-dark;
     }
   }
 }

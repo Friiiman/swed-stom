@@ -42,9 +42,10 @@
     width: 150px;
     margin-bottom: 10px;
     transition: all 0.5s;
-  }
-
-  &__link:hover {
     color: $main-color;
+
+    &:hover {
+      color: $gray;
+    }
   }
 }

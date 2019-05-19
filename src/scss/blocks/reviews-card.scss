@@ -33,4 +33,11 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  &__text {
+
+    @media (max-width: $screen-md) {
+      margin: 5px 10px;
+    }
+  }
 }

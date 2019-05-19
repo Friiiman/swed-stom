@@ -7,6 +7,14 @@
     padding: 50px 35px 100px;
   }
 
+  @media (max-width: $screen-md) {
+    padding: 50px 20px 100px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 50px 10px 100px;
+  }
+
   &__title {
     margin-bottom: 0;
     padding-bottom: 15px;

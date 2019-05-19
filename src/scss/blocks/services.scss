@@ -14,12 +14,32 @@
     margin-bottom: 0;
     padding-bottom: 15px;
     font-size: 46px;
+
+    @media (max-width: $screen-md) {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
   }
 
   &__text {
     margin: 0;
     padding-bottom: 80px;
     font-style: italic;
+
+    @media (max-width: $screen-md) {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
   }
 
   &__inner {

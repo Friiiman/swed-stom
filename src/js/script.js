@@ -30,8 +30,8 @@ $(document).ready(function($){
 
 
   $('#burger__item').click(function(menuOpen){
-    // menuOpen.eventDefault();
     $(this).toggleClass('burger__item-open');
+    $('.burger').toggleClass('burger__heartbeat');
     $('.main-nav').toggleClass('main-nav--active');
   });
 

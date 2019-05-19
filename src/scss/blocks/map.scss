@@ -2,4 +2,8 @@
   margin: 0 auto;
   max-width: 1160px;
   height: 350px;
+
+  @media (max-width: $screen-md) {
+    margin: 0 -10px;
+  }
 }
