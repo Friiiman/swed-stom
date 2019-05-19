@@ -173,9 +173,6 @@ button {
     max-width: 1160px; }
   .header-page__logo {
     width: 220px; }
-    @media (max-width: 400px) {
-      .header-page__logo {
-        width: 160px; } }
   .header-page__text {
     position: absolute;
     width: 200px;
@@ -227,10 +224,14 @@ button {
   @media (max-width: 750px) {
     .footer-page {
       padding: 10px 20px; } }
+  @media (max-width: 499px) {
+    .footer-page {
+      height: 85px; } }
   @media (max-width: 450px) {
     .footer-page {
       padding: 10px 10px; } }
   .footer-page__inner {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -307,6 +308,43 @@ button {
       bottom: -3px;
       width: 100%;
       border-bottom: 1px solid #449bda; }
+  .footer-page__text {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    @media (max-width: 499px) {
+      .footer-page__text {
+        display: block; } }
+  .footer-page__time {
+    list-style-type: none;
+    color: #828282; }
+  .footer-page__phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 7px; }
+  .footer-page__phone-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -moz-text-align-last: left;
+         text-align-last: left;
+    margin-left: 10px; }
+  .footer-page__phone-title {
+    color: #828282; }
+  .footer-page__phone-item {
+    color: #449bda;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+    .footer-page__phone-item:first-of-type {
+      margin: 1px 0 8px; }
+    .footer-page__phone-item:hover {
+      color: #828282; }
 
 .logo {
   position: relative;
@@ -318,9 +356,6 @@ button {
     color: #449bda;
     font-size: 12px;
     font-weight: bold; }
-    @media (max-width: 400px) {
-      .logo__text {
-        right: -25px; } }
 
 .main-nav {
   position: relative;
@@ -399,9 +434,7 @@ button {
   border-radius: 50%;
   border: 1px solid #ababab;
   overflow: hidden;
-  z-index: 10;
-  -webkit-animation: beat 7s infinite linear;
-          animation: beat 7s infinite linear; }
+  z-index: 10; }
   @media (max-width: 1120px) {
     .burger {
       display: block;
@@ -480,6 +513,9 @@ button {
     .burger__item-open span:after {
       -webkit-transform: rotate(135deg);
               transform: rotate(135deg); }
+  .burger__heartbeat {
+    -webkit-animation: beat 7s infinite linear;
+            animation: beat 7s infinite linear; }
 
 @-webkit-keyframes beat {
   0% {
@@ -595,6 +631,12 @@ button {
     @media (max-width: 950px) {
       .advantages__inner {
         padding: 60px 35px 0; } }
+    @media (max-width: 750px) {
+      .advantages__inner {
+        padding: 0 20px; } }
+    @media (max-width: 450px) {
+      .advantages__inner {
+        padding: 0 10px; } }
   .advantages__title {
     margin: 0;
     padding-bottom: 31px;
@@ -693,10 +735,26 @@ button {
     margin-bottom: 0;
     padding-bottom: 15px;
     font-size: 46px; }
+    @media (max-width: 750px) {
+      .services__title {
+        margin-left: -10px;
+        margin-right: -10px; } }
+    @media (max-width: 450px) {
+      .services__title {
+        margin-left: -20px;
+        margin-right: -20px; } }
   .services__text {
     margin: 0;
     padding-bottom: 80px;
     font-style: italic; }
+    @media (max-width: 750px) {
+      .services__text {
+        margin-left: -10px;
+        margin-right: -10px; } }
+    @media (max-width: 450px) {
+      .services__text {
+        margin-left: -20px;
+        margin-right: -20px; } }
   .services__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -783,10 +841,26 @@ button {
     margin-bottom: 0;
     padding-bottom: 15px;
     font-size: 46px; }
+    @media (max-width: 750px) {
+      .doctors__title {
+        margin-left: -10px;
+        margin-right: -10px; } }
+    @media (max-width: 450px) {
+      .doctors__title {
+        margin-left: -20px;
+        margin-right: -20px; } }
   .doctors__text {
     margin: 0;
     padding-bottom: 80px;
     font-style: italic; }
+    @media (max-width: 750px) {
+      .doctors__text {
+        margin-left: -10px;
+        margin-right: -10px; } }
+    @media (max-width: 450px) {
+      .doctors__text {
+        margin-left: -20px;
+        margin-right: -20px; } }
 
 .doctors-card {
   position: relative;
@@ -965,6 +1039,12 @@ button {
   @media (max-width: 950px) {
     .reviews {
       padding: 50px 35px 100px; } }
+  @media (max-width: 750px) {
+    .reviews {
+      padding: 50px 20px 100px; } }
+  @media (max-width: 450px) {
+    .reviews {
+      padding: 50px 10px 100px; } }
   .reviews__title {
     margin-bottom: 0;
     padding-bottom: 15px;
@@ -1010,6 +1090,9 @@ button {
     background-size: 100%; }
   .reviews-card:last-of-type {
     margin-bottom: 0; }
+  @media (max-width: 750px) {
+    .reviews-card__text {
+      margin: 5px 10px; } }
 
 .contacts {
   padding: 50px 60px 100px;
@@ -1029,7 +1112,6 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-left: 3px;
     padding-bottom: 100px; }
     @media (max-width: 1130px) {
       .contacts__inner {
@@ -1045,6 +1127,10 @@ button {
     font-size: 46px;
     margin-bottom: 0;
     padding-bottom: 50px; }
+    @media (max-width: 750px) {
+      .contacts__title {
+        margin-left: -20px;
+        margin-right: -20px; } }
   .contacts__text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1075,7 +1161,8 @@ button {
     position: relative;
     width: 500px;
     height: 400px;
-    border: 1px solid #449bda; }
+    border-left: 1px solid #449bda;
+    border-right: 1px solid #449bda; }
     @media (max-width: 550px) {
       .contacts__slider {
         width: 350px;
@@ -1124,10 +1211,11 @@ button {
   .contacts__slider-item {
     width: 500px;
     height: 400px;
-    border: 1px solid #449bda;
+    border-top: 1px solid #449bda;
+    border-bottom: 1px solid #449bda;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-    @media (max-width: 549px) {
+    @media (max-width: 550px) {
       .contacts__slider-item {
         width: 350px;
         height: 300px; } }
@@ -1173,14 +1261,18 @@ button {
     width: 150px;
     margin-bottom: 10px;
     -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
-  .contacts-card__link:hover {
+    transition: all 0.5s;
     color: #449bda; }
+    .contacts-card__link:hover {
+      color: #ababab; }
 
 .map {
   margin: 0 auto;
   max-width: 1160px;
   height: 350px; }
+  @media (max-width: 750px) {
+    .map {
+      margin: 0 -10px; } }
 
 .service {
   max-width: 1160px;
