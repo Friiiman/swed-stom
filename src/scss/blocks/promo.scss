@@ -32,6 +32,10 @@
 
   &__inner {
     margin-left: 8%;
+
+    @media (max-width: 649px) {
+      margin-left: 20px;
+    }
   }
 
   &__title {
@@ -39,10 +43,17 @@
     margin: 0;
     padding-bottom: 10px;
     font-size: 56px;
+
+      @media (max-width: 649px) {
+        font-size: 38px;
+      }
   }
 
   &__text {
-    margin-left: 5px;
     font-size: 24px;
+
+    @media (max-width: 649px) {
+      font-size: 18px;
+    }
   }
 }

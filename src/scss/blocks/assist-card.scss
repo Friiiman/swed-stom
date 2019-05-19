@@ -56,4 +56,15 @@
     font-weight: bold;
     font-size: 20px;
   }
+
+  &__text {
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-right: 30px;
+    width: 85%;
+
+    @media (max-width: $screen-md) {
+      margin-left: 10px;
+    }
+  }
 }

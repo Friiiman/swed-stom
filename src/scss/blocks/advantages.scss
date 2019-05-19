@@ -28,14 +28,23 @@
     font-size: 24px;
     font-weight: bold;
 
+    @media (max-width: 649px) {
+      margin-left: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
     &:before {
       content: '';
       position: absolute;
       width: 100%;
-      // width: 114.7%;
       left: -100px;
       top: -20px;
       border-top: 2px solid $gray;
+
+      @media (max-width: 649px) {
+        left: 0;
+      }
     }
 
     &:first-of-type:before {
@@ -80,6 +89,10 @@
     background-image: url(../img/sprite-advantages.png);
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (max-width: 649px) {
+      display: none;
+    }
   }
 
   &__item-individual:after {
