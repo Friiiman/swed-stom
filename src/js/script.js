@@ -7,35 +7,38 @@ svg4everybody();
 $(document).ready(function($){
 
 
+  //*****BUTTON IN DOCTORS-CARD*****
   $('.doctors-card__button').click(function(){
     $(this).siblings('.doctors-card__text-more').toggleClass('doctors-card__text--hide');
   });
 
 
-  //*****PARALLAX*****
+  //*****PARALLAX PROMO*****
   $(window).scroll(function(){
     const st = $(this).scrollTop();
-
     $('.promo__inner').css({
       'transform' : 'translate(0%, -' + st / 4 +'%'
     });
-
     $('.promo').css({'top': -$(window).scrollTop() / 2});
   });
 
 
-  // $('.main-nav__phone-title').click(function(){
-  //     $('.main-nav__phone-list').toggleClass('main-nav__phone-list--hide');
-  // });
-
-
+  //*****BURGER MENU*****
   $('#burger__item').click(function(menuOpen){
     $(this).toggleClass('burger__item-open');
     $('.burger').toggleClass('burger__heartbeat');
     $('.main-nav').toggleClass('main-nav--active');
+    menuOpen.stopPropagation();
+  });
+
+  $('body').click(function(menuClose){
+    $('#burger__item').removeClass('burger__item-open');
+    $('.burger').addClass('burger__heartbeat');
+    $('.main-nav').removeClass('main-nav--active');
   });
 
 
+  //*****SLIDERS*****
   $('.js-contacts__slider').slick({
   });
 

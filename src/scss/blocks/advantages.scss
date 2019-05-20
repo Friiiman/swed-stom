@@ -24,6 +24,10 @@
     margin: 0;
     padding-bottom: 31px;
     font-size: 46px;
+
+    @media (max-width: 649px) {
+      font-size: 36px;
+    }
   }
 
   &__item {

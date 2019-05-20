@@ -20,6 +20,10 @@
       margin-right: -10px;
     }
 
+    @media (max-width: 649px) {
+      font-size: 36px;
+    }
+
     @media (max-width: $screen-sm) {
       margin-left: -20px;
       margin-right: -20px;
