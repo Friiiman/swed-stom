@@ -557,6 +557,7 @@ button {
   top: 0;
   left: 0;
   right: 0;
+  padding-right: 10px;
   background-image: url(../img/promo-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -617,6 +618,9 @@ button {
     padding-top: 80px;
     padding-bottom: 15px;
     font-size: 46px; }
+    @media (max-width: 649px) {
+      .about__title {
+        font-size: 36px; } }
   .about__text {
     margin: 0;
     padding-bottom: 20px; }
@@ -641,6 +645,9 @@ button {
     margin: 0;
     padding-bottom: 31px;
     font-size: 46px; }
+    @media (max-width: 649px) {
+      .advantages__title {
+        font-size: 36px; } }
   .advantages__item {
     position: relative;
     list-style-type: none;
@@ -739,6 +746,9 @@ button {
       .services__title {
         margin-left: -10px;
         margin-right: -10px; } }
+    @media (max-width: 649px) {
+      .services__title {
+        font-size: 36px; } }
     @media (max-width: 450px) {
       .services__title {
         margin-left: -20px;
@@ -845,6 +855,9 @@ button {
       .doctors__title {
         margin-left: -10px;
         margin-right: -10px; } }
+    @media (max-width: 649px) {
+      .doctors__title {
+        font-size: 36px; } }
     @media (max-width: 450px) {
       .doctors__title {
         margin-left: -20px;
@@ -949,6 +962,9 @@ button {
     margin-bottom: 0;
     padding-bottom: 15px;
     font-size: 46px; }
+    @media (max-width: 649px) {
+      .assist__title {
+        font-size: 36px; } }
   .assist__text {
     margin: 0;
     padding-bottom: 80px;
@@ -1049,6 +1065,9 @@ button {
     margin-bottom: 0;
     padding-bottom: 15px;
     font-size: 46px; }
+    @media (max-width: 649px) {
+      .reviews__title {
+        font-size: 36px; } }
   .reviews__text {
     margin: 0;
     padding-bottom: 80px;
@@ -1131,6 +1150,9 @@ button {
       .contacts__title {
         margin-left: -20px;
         margin-right: -20px; } }
+    @media (max-width: 649px) {
+      .contacts__title {
+        font-size: 36px; } }
   .contacts__text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1291,6 +1313,9 @@ button {
     font-size: 46px;
     margin-bottom: 0;
     padding-bottom: 15px; }
+    @media (max-width: 649px) {
+      .service__title {
+        font-size: 36px; } }
   .service__text {
     margin-bottom: 50px; }
   .service__text p {
