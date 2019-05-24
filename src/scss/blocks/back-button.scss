@@ -2,15 +2,15 @@
   position: fixed;
   display: block;
   width: 90px;
-  padding: 10px 15px 20px;
+  padding: 7px 5px 10px 10px;
   top: 50%;
-  right: -45px;
-  transform: rotate(-90deg);
+  left: -35px;
+  transform: rotate(90deg);
   color: $gray-dark;
   background-color: $second-color;
   border: 1px solid $main-color;
   border-radius: 15px 15px 0 0;
-  opacity: .2;
+  opacity: .3;
   transition: all .5s;
   z-index: 10;
 
