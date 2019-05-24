@@ -1403,7 +1403,7 @@ button {
   display: block;
   width: 40px;
   height: 50px;
-  top: 70%;
+  top: 50%;
   right: -45px;
   color: #828282;
   background-color: #f3cfcf;
@@ -1436,16 +1436,16 @@ button {
   position: fixed;
   display: block;
   width: 90px;
-  padding: 10px 15px 20px;
+  padding: 7px 5px 10px 10px;
   top: 50%;
-  right: -45px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  left: -35px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   color: #828282;
   background-color: #f3cfcf;
   border: 1px solid #449bda;
   border-radius: 15px 15px 0 0;
-  opacity: .2;
+  opacity: .3;
   -webkit-transition: all .5s;
   transition: all .5s;
   z-index: 10; }
