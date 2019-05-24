@@ -40,6 +40,26 @@ $(document).ready(function($){
 
   //*****SLIDERS*****
   $('.js-contacts__slider').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+  });
+
+
+  //*****UP-BUTTON*****
+  var top_show = 500; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+  var delay = 1000; // Задержка прокрутки
+  $(document).ready(function() {
+    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+      /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+      if ($(this).scrollTop() > top_show) $('.up-button').addClass('up-button--active');
+      else $('.up-button').removeClass('up-button--active');
+    });
+    $('.up-button').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+      /* Плавная прокрутка наверх */
+      $('body, html').animate({
+        scrollTop: 0
+      }, delay);
+    });
   });
 
 
