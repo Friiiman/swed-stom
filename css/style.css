@@ -99,9 +99,20 @@
   line-height: 1.5;
   color: #24292e; }
 
+html {
+  height: 100%; }
+
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 img {
   max-width: 100%;
@@ -212,12 +223,18 @@ button {
       color: #828282; }
 
 .main-page {
-  position: relative; }
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
 
 .footer-page {
   padding: 20px 60px;
   background-color: #f3cfcf;
-  border-top: 1px solid #ababab; }
+  border-top: 1px solid #ababab;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
   @media (max-width: 950px) {
     .footer-page {
       padding: 10px 35px; } }
@@ -1380,6 +1397,40 @@ button {
     @media (max-width: 750px) {
       .service-card__price {
         padding-right: 10px; } }
+
+.up-button {
+  position: fixed;
+  display: block;
+  width: 40px;
+  height: 50px;
+  top: 70%;
+  right: -45px;
+  color: #828282;
+  background-color: #f3cfcf;
+  border: 1px solid #449bda;
+  border-radius: 15px 0 0 15px;
+  opacity: 0;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+  z-index: 10; }
+  .up-button:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 12px;
+    left: 7px;
+    background-image: url(../img/up-button.svg);
+    background-repeat: no-repeat;
+    background-size: 100%; }
+  .up-button:hover {
+    opacity: 1;
+    -webkit-box-shadow: -3px 2px 4px 1px #ababab;
+            box-shadow: -3px 2px 4px 1px #ababab; }
+  .up-button--active {
+    right: -1px;
+    opacity: .2; }
 
 .back-button {
   position: fixed;
