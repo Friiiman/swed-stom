@@ -46,42 +46,19 @@ $(document).ready(function($){
 
 
   //*****UP-BUTTON*****
-  var top_show = 300; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
-  var delay = 1000; // Задержка прокрутки
+  const showUpButton = 300;
+  const delayUpButton = 1000;
   $(document).ready(function() {
-    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
-      /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
-      if ($(this).scrollTop() > top_show) $('.up-button').addClass('up-button--active');
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > showUpButton) $('.up-button').addClass('up-button--active');
       else $('.up-button').removeClass('up-button--active');
     });
-    $('.up-button').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
-      /* Плавная прокрутка наверх */
+    $('.up-button').click(function () {
       $('body, html').animate({
         scrollTop: 0
-      }, delay);
+      }, delayUpButton);
     });
   });
 
 
 });
-
-// //*****CARD*****
-// const cards = document.querySelectorAll('.services-card');
-
-// for (let i = 0; i < cards.length; i++) {
-//   const card = cards[i];
-//   card.addEventListener('mousemove', startRotate);
-//   card.addEventListener('mouseout', stopRotate);
-// }
-
-// function startRotate(event){
-//   const cardItem = this.querySelector('.services-card__inner');
-//   const halfHeight = cardItem.offsetHeight / 2;
-//   const halfWidth = cardItem.offsetWidth / 2;
-//   cardItem.style.transform = 'rotateX(' + -(event.offsetY - halfHeight) / 7 + 'deg) rotateY(' + -(event.offsetX - halfWidth) / 7 + 'deg)';
-// }
-
-// function stopRotate(event){
-//   const cardItem = this.querySelector('.services-card__inner');
-//   cardItem.style.transform = 'rotate(0)';
-// }
