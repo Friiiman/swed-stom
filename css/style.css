@@ -1241,6 +1241,7 @@ button {
     .contacts__slider .slick-prev {
       left: 25%; }
     .contacts__slider .slick-prev:before {
+      background-position: 2px 0;
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); }
     .contacts__slider .slick-next {
