@@ -19,7 +19,9 @@ $(document).ready(function($){
     $('.promo__inner').css({
       'transform' : 'translate(0%, -' + st / 4 +'%'
     });
-    $('.promo').css({'top': -$(window).scrollTop() / 2});
+    $('.promo').css({
+      'top': -st / 2
+    });
   });
 
 
