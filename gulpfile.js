@@ -105,9 +105,6 @@ function javascript() {
           }
         ]
       },
-      // externals: {
-      //   jquery: 'jQuery'
-      // }
     }))
     .pipe(dest(`${dir.build}js`))
     .pipe(uglify())
