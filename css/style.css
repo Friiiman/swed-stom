@@ -654,10 +654,10 @@ button {
         padding: 60px 35px 0; } }
     @media (max-width: 750px) {
       .advantages__inner {
-        padding: 0 20px; } }
+        padding: 60px 20px 0; } }
     @media (max-width: 450px) {
       .advantages__inner {
-        padding: 0 10px; } }
+        padding: 60px 10px 0; } }
   .advantages__title {
     margin: 0;
     padding-bottom: 31px;
