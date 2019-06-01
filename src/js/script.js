@@ -40,6 +40,24 @@ $(document).ready(function($){
   });
 
 
+  //*****POPUPS*****
+  $(".licenses__item").click(function(){
+    const img = $(this);
+    const src = img.attr('src');
+    $("body").append("<div class='licenses__popup'>" +
+        "<div class='licenses__popup-bg'></div>" +
+        "<img src='" + src + "' class='licenses__popup-img' alt=''лицензия />" +
+      "</div>");
+    $(".licenses__popup").fadeIn(800);
+    $(".licenses__popup-bg").click(function(){
+      $(".licenses__popup").fadeOut(800);
+      setTimeout(function() {
+        $(".licenses__popup").remove();
+      }, 800);
+    });
+  });
+
+
   //*****SLIDERS*****
   $('.js-contacts__slider').slick({
     autoplay: true,

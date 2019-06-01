@@ -1,0 +1,45 @@
+.certificates {
+  width: 100%;
+  background-color: $white;
+  padding-bottom: 80px;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    @media (max-width: $screen-xmd) {
+      padding: 0 35px;
+    }
+
+    @media (max-width: $screen-md) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding: 0 10px;
+    }
+  }
+
+  &__text {
+    font-size: 30px;
+
+    @media (max-width: 649px) {
+      font-size: 24px;
+    }
+  }
+
+  &__link {
+    color: $main-color;
+    transition: all .5s;
+
+    &:hover {
+      color: $gray-dark;
+    }
+  }
+}

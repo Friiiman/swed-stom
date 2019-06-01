@@ -16,6 +16,10 @@
   &__description {
     width: 70%;
     padding: 15px 40px 0 15px;
+
+    @media (max-width: $screen-sm) {
+      width: 50%;
+    }
   }
 
   &__price {

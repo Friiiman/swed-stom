@@ -1,22 +1,23 @@
 .advantages {
   background-color: $white;
+  padding-top: 80px;
   padding-bottom: 80px;
 
   &__inner {
     margin: 0 auto;
-    padding: 60px 60px 0;
+    padding: 0 60px;
     max-width: 1160px;
 
     @media (max-width: $screen-xmd) {
-      padding: 60px 35px 0;
+      padding: 0 35px;
     }
 
     @media (max-width: $screen-md) {
-      padding: 60px 20px 0;
+      padding: 0 20px;
     }
 
     @media (max-width: $screen-sm) {
-      padding: 60px 10px 0;
+      padding: 0 10px;
     }
   }
 

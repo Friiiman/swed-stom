@@ -1,8 +1,4 @@
 .header-page {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
   padding: 10px 60px;
   background-color: rgba($header-page-color, .5);
   z-index: 10;
@@ -19,21 +15,6 @@
   @media (max-width: $screen-sm) {
     padding: 10px 10px;
   }
-
-  // &:before {
-  //   content: '';
-  //   width: 100%;
-  //   height: 106px;
-  //   left: -40px;
-  //   right: -40px;
-  //   background: inherit;
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  //   right: 0;
-  //   box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
-  //   filter: blur(1px);
-  // }
 
   &__inner {
     position: relative;
