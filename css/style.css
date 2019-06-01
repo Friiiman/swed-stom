@@ -644,20 +644,21 @@ button {
 
 .advantages {
   background-color: #ffffff;
+  padding-top: 80px;
   padding-bottom: 80px; }
   .advantages__inner {
     margin: 0 auto;
-    padding: 60px 60px 0;
+    padding: 0 60px;
     max-width: 1160px; }
     @media (max-width: 950px) {
       .advantages__inner {
-        padding: 60px 35px 0; } }
+        padding: 0 35px; } }
     @media (max-width: 750px) {
       .advantages__inner {
-        padding: 60px 20px 0; } }
+        padding: 0 20px; } }
     @media (max-width: 450px) {
       .advantages__inner {
-        padding: 60px 10px 0; } }
+        padding: 0 10px; } }
   .advantages__title {
     margin: 0;
     padding-bottom: 31px;
@@ -733,11 +734,109 @@ button {
   .advantages__item-trust:after {
     background-position: -10px -230px; }
 
-.slider {
-  padding: 0 60px 100px;
-  margin: 0 auto;
-  max-width: 1160px;
-  background-color: #ffffff; }
+.licenses {
+  width: 100%;
+  background-color: #f3cfcf;
+  border-top: 1px solid #ababab;
+  border-bottom: 1px solid #ababab; }
+  .licenses__inner {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 30px 60px; }
+    @media (max-width: 839px) {
+      .licenses__inner {
+        overflow-x: auto;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
+    @media (max-width: 950px) {
+      .licenses__inner {
+        padding: 30px 35px; } }
+    @media (max-width: 750px) {
+      .licenses__inner {
+        padding: 30px 20px; } }
+    @media (max-width: 450px) {
+      .licenses__inner {
+        padding: 30px 10px; } }
+  .licenses__item {
+    max-height: 370px;
+    margin: 10px;
+    cursor: pointer; }
+    @media (max-width: 839px) {
+      .licenses__item:last-child {
+        padding-right: 6%; } }
+  .licenses__popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center; }
+  .licenses__popup-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 20; }
+  .licenses__popup-img {
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 3%;
+    max-width: 94%;
+    max-height: 94%;
+    z-index: 21; }
+
+.certificates {
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 80px; }
+  .certificates__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 60px; }
+    @media (max-width: 950px) {
+      .certificates__inner {
+        padding: 0 35px; } }
+    @media (max-width: 750px) {
+      .certificates__inner {
+        padding: 0 20px; } }
+    @media (max-width: 450px) {
+      .certificates__inner {
+        padding: 0 10px; } }
+  .certificates__text {
+    font-size: 30px; }
+    @media (max-width: 649px) {
+      .certificates__text {
+        font-size: 24px; } }
+  .certificates__link {
+    color: #449bda;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+    .certificates__link:hover {
+      color: #828282; }
 
 .services {
   display: -webkit-box;
@@ -1392,6 +1491,9 @@ button {
   .service-card__description {
     width: 70%;
     padding: 15px 40px 0 15px; }
+    @media (max-width: 450px) {
+      .service-card__description {
+        width: 50%; } }
   .service-card__price {
     width: 25%;
     padding: 15px 40px 0 15px; }
@@ -1431,7 +1533,7 @@ button {
             box-shadow: -3px 2px 4px 1px #ababab; }
   .up-button--active {
     right: -1px;
-    opacity: .2; }
+    opacity: .4; }
 
 .back-button {
   position: fixed;
@@ -1446,7 +1548,7 @@ button {
   background-color: #f3cfcf;
   border: 1px solid #449bda;
   border-radius: 15px 15px 0 0;
-  opacity: .3;
+  opacity: .4;
   -webkit-transition: all .5s;
   transition: all .5s;
   z-index: 10; }
