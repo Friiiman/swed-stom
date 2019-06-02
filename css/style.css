@@ -451,6 +451,7 @@ button {
   border-radius: 50%;
   border: 1px solid #ababab;
   overflow: hidden;
+  cursor: pointer;
   z-index: 10; }
   @media (max-width: 1120px) {
     .burger {
@@ -1197,15 +1198,15 @@ button {
     .promotions-discounts__item:last-of-type:before {
       content: '';
       border-bottom: none; }
-  .promotions-discounts__item ul {
-    margin-left: 20px;
-    margin-right: 20px; }
-  .promotions-discounts__item ul li {
-    margin: 10px 0 0 18px; }
-  .promotions-discounts__item p {
-    margin: 0 0 15px 20px; }
-  .promotions-discounts__item p:last-child {
-    margin: 0 20px 0; }
+    .promotions-discounts__item ul {
+      margin-left: 20px;
+      margin-right: 20px; }
+    .promotions-discounts__item ul li {
+      margin: 10px 0 0 18px; }
+    .promotions-discounts__item p {
+      margin: 0 0 15px 20px; }
+    .promotions-discounts__item p:last-child {
+      margin: 0 20px 0; }
   .promotions-discounts__month {
     color: #449bda;
     font-weight: bold; }
@@ -1481,20 +1482,20 @@ button {
         font-size: 36px; } }
   .service__text {
     margin-bottom: 50px; }
-  .service__text p {
-    margin: 0;
-    padding-bottom: 15px; }
+    .service__text p {
+      margin: 0;
+      padding-bottom: 15px; }
   .service__text-more {
     margin-bottom: 100px; }
-  .service__text-more h3 {
-    margin-bottom: 15px;
-    font-size: 28px; }
-  .service__text-more p {
-    margin: 15px 0; }
-  .service__text-more ul {
-    margin-bottom: 16px; }
-  .service__text-more ul li {
-    margin: 10px 0 0 18px; }
+    .service__text-more h3 {
+      margin-bottom: 15px;
+      font-size: 28px; }
+    .service__text-more p {
+      margin: 15px 0; }
+    .service__text-more ul {
+      margin-bottom: 16px; }
+    .service__text-more ul li {
+      margin: 10px 0 0 18px; }
   .service__catalog {
     display: -webkit-box;
     display: -ms-flexbox;
