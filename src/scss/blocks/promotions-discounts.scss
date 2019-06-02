@@ -1,18 +1,18 @@
 .promotions-discounts {
-  padding: 50px 60px 80px;
+  padding: 50px 60px 100px;
   margin: 0 auto;
   max-width: 1160px;
 
   @media (max-width: $screen-xmd) {
-    padding: 50px 35px 80px;
+    padding: 50px 35px 100px;
   }
 
   @media (max-width: $screen-md) {
-    padding: 50px 20px 80px;
+    padding: 50px 20px 100px;
   }
 
   @media (max-width: $screen-sm) {
-    padding: 50px 10px 80px;
+    padding: 50px 10px 100px;
   }
 
   &__title {
@@ -38,6 +38,10 @@
   &__item {
     position: relative;
     padding-bottom: 50px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
 
     &:before {
       content: '';
