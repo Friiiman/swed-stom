@@ -57,11 +57,52 @@ $(document).ready(function($){
     });
   });
 
+  $(".main-slider__item").click(function(){
+    const img = $(this);
+    const src = img.attr('src');
+    $("body").append("<div class='main-slider__popup'>" +
+        "<div class='main-slider__popup-bg'></div>" +
+        "<img src='" + src + "' class='main-slider__popup-img' alt=''лицензия />" +
+      "</div>");
+    $(".main-slider__popup").fadeIn(800);
+    $(".main-slider__popup-bg").click(function(){
+      $(".main-slider__popup").fadeOut(800);
+      setTimeout(function() {
+        $(".main-slider__popup").remove();
+      }, 800);
+    });
+  });
+
 
   //*****SLIDERS*****
   $('.js-contacts__slider').slick({
     autoplay: true,
     autoplaySpeed: 5000,
+  });
+
+  $('.js-main-slider').slick({
+    centerMode: true,
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          centerMode: true,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
 
