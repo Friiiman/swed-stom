@@ -26,8 +26,8 @@ $(document).ready(function($){
 
 
   //*****BURGER MENU*****
-  $('#burger__item').click(function(menuOpen){
-    $(this).toggleClass('burger__item-open');
+  $('.burger').click(function(menuOpen){
+    $('#burger__item').toggleClass('burger__item-open');
     $('.burger').toggleClass('burger__heartbeat');
     $('.main-nav').toggleClass('main-nav--active');
     menuOpen.stopPropagation();

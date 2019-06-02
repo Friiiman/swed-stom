@@ -52,23 +52,23 @@
       content: '';
       border-bottom: none;
     }
-  }
 
-  &__item ul {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+    & ul {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
 
-  &__item ul li {
-    margin: 10px 0 0 18px;
-  }
+    & ul li {
+      margin: 10px 0 0 18px;
+    }
 
-  &__item p {
-    margin: 0 0 15px 20px;
-  }
+    & p {
+      margin: 0 0 15px 20px;
+    }
 
-  &__item p:last-child {
-    margin: 0 20px 0;
+    & p:last-child {
+      margin: 0 20px 0;
+    }
   }
 
   &__month {
