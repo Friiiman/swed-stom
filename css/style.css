@@ -442,6 +442,9 @@ button {
         .main-nav__link--active:before {
           border-bottom: none; } }
 
+.main-title {
+  display: none; }
+
 .burger {
   display: none;
   position: relative;
