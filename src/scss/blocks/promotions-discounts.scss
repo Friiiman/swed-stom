@@ -1,14 +1,78 @@
 .promotions-discounts {
-  padding: 50px 60px 100px;
+  padding: 50px 60px 80px;
   margin: 0 auto;
   max-width: 1160px;
 
   @media (max-width: $screen-xmd) {
-    padding: 50px 35px 100px;
+    padding: 50px 35px 80px;
+  }
+
+  @media (max-width: $screen-md) {
+    padding: 50px 20px 80px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 50px 10px 80px;
   }
 
   &__title {
     font-size: 46px;
-    margin-bottom: 80px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+
+    @media (max-width: 649px) {
+      font-size: 36px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 50px;
+    font-style: italic;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+    padding-bottom: 50px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      bottom: 25px;
+      border-bottom: 2px solid $main-color;
+    }
+
+    &:last-of-type:before {
+      content: '';
+      border-bottom: none;
+    }
+  }
+
+  &__item ul {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__item ul li {
+    margin: 10px 0 0 18px;
+  }
+
+  &__item p {
+    margin: 0 0 15px 20px;
+  }
+
+  &__item p:last-child {
+    margin: 0 20px 0;
+  }
+
+  &__month {
+    color: $main-color;
+    font-weight: bold;
   }
 }
