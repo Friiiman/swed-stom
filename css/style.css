@@ -1154,15 +1154,61 @@ button {
         margin-left: 10px; } }
 
 .promotions-discounts {
-  padding: 50px 60px 100px;
+  padding: 50px 60px 80px;
   margin: 0 auto;
   max-width: 1160px; }
   @media (max-width: 950px) {
     .promotions-discounts {
-      padding: 50px 35px 100px; } }
+      padding: 50px 35px 80px; } }
+  @media (max-width: 750px) {
+    .promotions-discounts {
+      padding: 50px 20px 80px; } }
+  @media (max-width: 450px) {
+    .promotions-discounts {
+      padding: 50px 10px 80px; } }
   .promotions-discounts__title {
     font-size: 46px;
-    margin-bottom: 80px; }
+    margin-bottom: 0;
+    padding-bottom: 15px; }
+    @media (max-width: 649px) {
+      .promotions-discounts__title {
+        font-size: 36px; } }
+  .promotions-discounts__text {
+    margin: 0 0 50px;
+    font-style: italic; }
+  .promotions-discounts__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .promotions-discounts__item {
+    position: relative;
+    padding-bottom: 50px; }
+    .promotions-discounts__item:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      bottom: 25px;
+      border-bottom: 2px solid #449bda; }
+    .promotions-discounts__item:last-of-type:before {
+      content: '';
+      border-bottom: none; }
+  .promotions-discounts__item ul {
+    margin-left: 20px;
+    margin-right: 20px; }
+  .promotions-discounts__item ul li {
+    margin: 10px 0 0 18px; }
+  .promotions-discounts__item p {
+    margin: 0 0 15px 20px; }
+  .promotions-discounts__item p:last-child {
+    margin: 0 20px 0; }
+  .promotions-discounts__month {
+    color: #449bda;
+    font-weight: bold; }
 
 .reviews {
   padding: 50px 60px 100px;
@@ -1419,13 +1465,13 @@ button {
   padding: 50px 60px 0; }
   @media (max-width: 950px) {
     .service {
-      padding: 0 35px; } }
+      padding: 50px 35px 0; } }
   @media (max-width: 750px) {
     .service {
-      padding: 0 20px; } }
+      padding: 50px 20px 0; } }
   @media (max-width: 450px) {
     .service {
-      padding: 0 10px; } }
+      padding: 50px 10px 0; } }
   .service__title {
     font-size: 46px;
     margin-bottom: 0;
