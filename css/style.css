@@ -738,6 +738,9 @@ button {
   .advantages__item-trust:after {
     background-position: -10px -230px; }
 
+.licenses-certificates__title {
+  display: none; }
+
 .licenses {
   width: 100%;
   background-color: #f3cfcf;
@@ -797,6 +800,7 @@ button {
     top: 3%;
     max-width: 94%;
     max-height: 94%;
+    border: 2px solid #449bda;
     z-index: 21; }
 
 .certificates {
@@ -858,7 +862,8 @@ button {
     .main-slider {
       padding: 0 10px 150px; } }
   .main-slider__item {
-    margin: 0 10px; }
+    margin: 0 10px;
+    cursor: pointer; }
   .main-slider__popup {
     position: absolute;
     width: 100%;
@@ -881,6 +886,7 @@ button {
     top: 4%;
     max-width: 90%;
     max-height: 90%;
+    border: 2px solid #449bda;
     z-index: 21; }
     @media (max-width: 650px) {
       .main-slider__popup-img {
