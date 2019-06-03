@@ -50,14 +50,6 @@
     max-height: 90%;
     border: 2px solid $main-color;
     z-index: 21;
-
-    @media (max-width: 650px) {
-      top: 10%;
-    }
-
-    @media (max-width: 500px) {
-      top: 20%;
-    }
   }
 
   & .slick-prev,
