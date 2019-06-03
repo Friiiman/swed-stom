@@ -888,12 +888,6 @@ button {
     max-height: 90%;
     border: 2px solid #449bda;
     z-index: 21; }
-    @media (max-width: 650px) {
-      .main-slider__popup-img {
-        top: 10%; } }
-    @media (max-width: 500px) {
-      .main-slider__popup-img {
-        top: 20%; } }
   .main-slider .slick-prev,
   .main-slider .slick-next {
     position: absolute;
