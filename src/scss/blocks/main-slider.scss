@@ -19,6 +19,7 @@
 
   &__item {
     margin: 0 10px;
+    cursor: pointer;
   }
 
   &__popup {
@@ -47,6 +48,7 @@
     top: 4%;
     max-width: 90%;
     max-height: 90%;
+    border: 2px solid $main-color;
     z-index: 21;
 
     @media (max-width: 650px) {
