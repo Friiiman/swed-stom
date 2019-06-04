@@ -188,7 +188,7 @@ button {
     position: absolute;
     width: 200px;
     left: 250px;
-    top: 10px; }
+    top: -5px; }
     @media (max-width: 499px) {
       .header-page__text {
         display: none; } }
@@ -380,7 +380,7 @@ button {
   @media (max-width: 1120px) {
     .main-nav {
       position: absolute;
-      top: 43px;
+      top: 53px;
       right: 142px;
       -webkit-transform-origin: top;
               transform-origin: top;
@@ -453,7 +453,7 @@ button {
   background-color: white;
   border-radius: 50%;
   border: 1px solid #ababab;
-  overflow: hidden;
+  top: 10px;
   cursor: pointer;
   z-index: 10; }
   @media (max-width: 1120px) {
@@ -517,9 +517,7 @@ button {
   .burger__item-open {
     background-color: transparent;
     -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-animation: beat 0s;
-            animation: beat 0s; }
+            box-shadow: none; }
     .burger__item-open:before, .burger__item-open:after {
       opacity: 0; }
     .burger__item-open:before {
@@ -534,43 +532,12 @@ button {
     .burger__item-open span:after {
       -webkit-transform: rotate(135deg);
               transform: rotate(135deg); }
-  .burger__heartbeat {
-    -webkit-animation: beat 7s infinite linear;
-            animation: beat 7s infinite linear; }
-
-@-webkit-keyframes beat {
-  0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1); }
-  5% {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1); }
-  10% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1); }
-  15% {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1); }
-  20% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1); } }
-
-@keyframes beat {
-  0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1); }
-  5% {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1); }
-  10% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1); }
-  15% {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1); }
-  20% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1); } }
+  .burger__text {
+    position: absolute;
+    color: #449bda;
+    font-weight: bold;
+    top: -25px;
+    text-transform: lowercase; }
 
 .promo {
   height: 700px;
