@@ -80,7 +80,7 @@ $(document).ready(function($){
     autoplaySpeed: 5000,
   });
 
-  $('.js-main-slider').slick({
+  $('.main-slider__inner').slick({
     centerMode: true,
     slidesToShow: 3,
     autoplay: true,
