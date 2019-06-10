@@ -112,10 +112,11 @@ $(document).ready(function($){
       if ($(this).scrollTop() > showUpButton) $('.up-button').addClass('up-button--active');
       else $('.up-button').removeClass('up-button--active');
     });
-    $('.up-button').click(function () {
+    $('.up-button').click(function (up) {
       $('body, html').animate({
         scrollTop: 0
       }, delayUpButton);
+      up.preventDefault();
     });
   });
 
